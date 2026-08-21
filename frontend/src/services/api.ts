@@ -1,7 +1,14 @@
 import axios from 'axios';
 import { RouteResponse, PresetRoute, SafePlace, CrowdReport, AdminDashboardData, UserAuth } from '../types';
 
-const API_BASE_URL = (import.meta as any).env?.VITE_API_URL || '/api';
+let rawUrl = (import.meta as any).env?.VITE_API_URL;
+if (rawUrl) {
+  rawUrl = rawUrl.replace(/\/+$/, '');
+  if (!rawUrl.endsWith('/api')) {
+    rawUrl = `${rawUrl}/api`;
+  }
+}
+const API_BASE_URL = rawUrl || '/api';
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
