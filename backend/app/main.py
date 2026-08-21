@@ -60,19 +60,35 @@ def health_check():
         "mode": "production/demo"
     }
 
-# Static Frontend SPA Mounting
+# Static Frontend SPA Mounting & Serving
 import os
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
 
-static_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "static"))
-if not os.path.exists(static_dir):
-    static_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "dist"))
+# Search candidate static directories
+possible_dirs = [
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "static")),
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "frontend", "dist")),
+    os.path.abspath("/app/backend/static"),
+    os.path.abspath("/app/frontend/dist"),
+    os.path.abspath("static")
+]
 
-if os.path.exists(static_dir) and os.path.exists(os.path.join(static_dir, "index.html")):
+static_dir = None
+for d in possible_dirs:
+    if os.path.exists(d) and os.path.exists(os.path.join(d, "index.html")):
+        static_dir = d
+        break
+
+if static_dir:
+    print(f"Serving frontend SPA from static directory: {static_dir}")
     assets_dir = os.path.join(static_dir, "assets")
     if os.path.exists(assets_dir):
         app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
+
+    @app.get("/", include_in_schema=False)
+    async def serve_root():
+        return FileResponse(os.path.join(static_dir, "index.html"))
 
     @app.get("/{full_path:path}", include_in_schema=False)
     async def serve_spa(full_path: str):
@@ -83,6 +99,7 @@ if os.path.exists(static_dir) and os.path.exists(os.path.join(static_dir, "index
             return FileResponse(file_path)
         return FileResponse(os.path.join(static_dir, "index.html"))
 else:
+    print("No built frontend static directory found. API-only mode active.")
     @app.get("/", tags=["Root"])
     def root():
         return {
