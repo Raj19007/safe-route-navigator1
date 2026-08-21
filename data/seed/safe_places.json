@@ -1,0 +1,932 @@
+[
+  {
+    "id": "SAF-0001",
+    "name": "Central Police Precinct HQ",
+    "category": "police",
+    "latitude": 37.766884,
+    "longitude": -122.433373,
+    "address": "515 Main Street, Central District",
+    "phone": "+1 (555) 0137",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0002",
+    "name": "North Metro Police Station",
+    "category": "police",
+    "latitude": 37.770157,
+    "longitude": -122.426937,
+    "address": "828 Main Street, Central District",
+    "phone": "+1 (555) 0173",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0003",
+    "name": "Westside Division Police Post",
+    "category": "police",
+    "latitude": 37.789839,
+    "longitude": -122.420853,
+    "address": "820 Main Street, Central District",
+    "phone": "+1 (555) 0114",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0004",
+    "name": "South Gate Police Beat Box",
+    "category": "police",
+    "latitude": 37.769807,
+    "longitude": -122.405658,
+    "address": "159 Main Street, Central District",
+    "phone": "+1 (555) 0117",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0005",
+    "name": "Tech Corridor Police Station",
+    "category": "police",
+    "latitude": 37.767895,
+    "longitude": -122.423703,
+    "address": "566 Main Street, Central District",
+    "phone": "+1 (555) 0170",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0006",
+    "name": "Downtown Community Police Station",
+    "category": "police",
+    "latitude": 37.765348,
+    "longitude": -122.403572,
+    "address": "266 Main Street, Central District",
+    "phone": "+1 (555) 0158",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0007",
+    "name": "University Safety & Security Dept",
+    "category": "police",
+    "latitude": 37.784748,
+    "longitude": -122.434522,
+    "address": "796 Main Street, Central District",
+    "phone": "+1 (555) 0141",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0008",
+    "name": "Riverside Police Station",
+    "category": "police",
+    "latitude": 37.771444,
+    "longitude": -122.400401,
+    "address": "263 Main Street, Central District",
+    "phone": "+1 (555) 0114",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0009",
+    "name": "Highway Patrol Station 4",
+    "category": "police",
+    "latitude": 37.765875,
+    "longitude": -122.409987,
+    "address": "106 Main Street, Central District",
+    "phone": "+1 (555) 0176",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0010",
+    "name": "Civic Center Police Post",
+    "category": "police",
+    "latitude": 37.77988,
+    "longitude": -122.431062,
+    "address": "408 Main Street, Central District",
+    "phone": "+1 (555) 0197",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0011",
+    "name": "Old Quarter Police Kiosk",
+    "category": "police",
+    "latitude": 37.788736,
+    "longitude": -122.401951,
+    "address": "172 Main Street, Central District",
+    "phone": "+1 (555) 0190",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0012",
+    "name": "Green Park Police Station",
+    "category": "police",
+    "latitude": 37.781747,
+    "longitude": -122.409611,
+    "address": "572 Main Street, Central District",
+    "phone": "+1 (555) 0176",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0013",
+    "name": "East Gate Transit Police",
+    "category": "police",
+    "latitude": 37.763564,
+    "longitude": -122.420151,
+    "address": "315 Main Street, Central District",
+    "phone": "+1 (555) 0135",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0014",
+    "name": "Harbor Division Police Station",
+    "category": "police",
+    "latitude": 37.770713,
+    "longitude": -122.437316,
+    "address": "692 Main Street, Central District",
+    "phone": "+1 (555) 0137",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0015",
+    "name": "Market Square Police Beat",
+    "category": "police",
+    "latitude": 37.789098,
+    "longitude": -122.429961,
+    "address": "454 Main Street, Central District",
+    "phone": "+1 (555) 0151",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0016",
+    "name": "7th Ave Police Station",
+    "category": "police",
+    "latitude": 37.760352,
+    "longitude": -122.407624,
+    "address": "608 Main Street, Central District",
+    "phone": "+1 (555) 0125",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0017",
+    "name": "Grand Blvd Police Substation",
+    "category": "police",
+    "latitude": 37.771774,
+    "longitude": -122.429676,
+    "address": "53 Main Street, Central District",
+    "phone": "+1 (555) 0184",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0018",
+    "name": "Midtown Rapid Response Post",
+    "category": "police",
+    "latitude": 37.783404,
+    "longitude": -122.420389,
+    "address": "620 Main Street, Central District",
+    "phone": "+1 (555) 0129",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0019",
+    "name": "West End Police Precinct",
+    "category": "police",
+    "latitude": 37.771042,
+    "longitude": -122.435821,
+    "address": "171 Main Street, Central District",
+    "phone": "+1 (555) 0173",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0020",
+    "name": "Industrial District Police Station",
+    "category": "police",
+    "latitude": 37.762642,
+    "longitude": -122.414654,
+    "address": "787 Main Street, Central District",
+    "phone": "+1 (555) 0190",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0021",
+    "name": "City Watch Tower Station",
+    "category": "police",
+    "latitude": 37.761702,
+    "longitude": -122.425179,
+    "address": "167 Main Street, Central District",
+    "phone": "+1 (555) 0199",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0022",
+    "name": "South Ridge Police Station",
+    "category": "police",
+    "latitude": 37.775991,
+    "longitude": -122.435104,
+    "address": "509 Main Street, Central District",
+    "phone": "+1 (555) 0139",
+    "is_24_7": true,
+    "emergency_types": [
+      "SOS",
+      "POLICE",
+      "SECURITY"
+    ]
+  },
+  {
+    "id": "SAF-0023",
+    "name": "City General Hospital Trauma Center",
+    "category": "hospital",
+    "latitude": 37.769402,
+    "longitude": -122.417066,
+    "address": "670 Health Ave, Sector 6",
+    "phone": "+1 (555) 0266",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0024",
+    "name": "Apollo Apex Emergency Care",
+    "category": "hospital",
+    "latitude": 37.781896,
+    "longitude": -122.438546,
+    "address": "396 Health Ave, Sector 6",
+    "phone": "+1 (555) 0227",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0025",
+    "name": "Memorial Medical Center",
+    "category": "hospital",
+    "latitude": 37.767421,
+    "longitude": -122.43782,
+    "address": "733 Health Ave, Sector 8",
+    "phone": "+1 (555) 0281",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0026",
+    "name": "St. Jude Emergency Hospital",
+    "category": "hospital",
+    "latitude": 37.768741,
+    "longitude": -122.411518,
+    "address": "204 Health Ave, Sector 3",
+    "phone": "+1 (555) 0279",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0027",
+    "name": "University Teaching Hospital",
+    "category": "hospital",
+    "latitude": 37.77033,
+    "longitude": -122.410104,
+    "address": "291 Health Ave, Sector 9",
+    "phone": "+1 (555) 0230",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0028",
+    "name": "Downtown Urgent Care Clinic",
+    "category": "hospital",
+    "latitude": 37.761966,
+    "longitude": -122.433199,
+    "address": "312 Health Ave, Sector 5",
+    "phone": "+1 (555) 0279",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0029",
+    "name": "Westside Health & Trauma Center",
+    "category": "hospital",
+    "latitude": 37.770913,
+    "longitude": -122.439371,
+    "address": "663 Health Ave, Sector 9",
+    "phone": "+1 (555) 0258",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0030",
+    "name": "Metropolitan Children & Emergency Hospital",
+    "category": "hospital",
+    "latitude": 37.78191,
+    "longitude": -122.404083,
+    "address": "644 Health Ave, Sector 6",
+    "phone": "+1 (555) 0289",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0031",
+    "name": "Sunrise 24/7 Medical Center",
+    "category": "hospital",
+    "latitude": 37.767064,
+    "longitude": -122.41056,
+    "address": "684 Health Ave, Sector 9",
+    "phone": "+1 (555) 0259",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0032",
+    "name": "Civic Emergency Care Hospital",
+    "category": "hospital",
+    "latitude": 37.765596,
+    "longitude": -122.412071,
+    "address": "794 Health Ave, Sector 9",
+    "phone": "+1 (555) 0229",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0033",
+    "name": "Northside Community Clinic",
+    "category": "hospital",
+    "latitude": 37.778291,
+    "longitude": -122.426496,
+    "address": "666 Health Ave, Sector 6",
+    "phone": "+1 (555) 0224",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0034",
+    "name": "Mercy Health Hospital",
+    "category": "hospital",
+    "latitude": 37.762788,
+    "longitude": -122.413044,
+    "address": "54 Health Ave, Sector 3",
+    "phone": "+1 (555) 0232",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0035",
+    "name": "Greenwood Emergency Ward",
+    "category": "hospital",
+    "latitude": 37.786105,
+    "longitude": -122.431317,
+    "address": "507 Health Ave, Sector 4",
+    "phone": "+1 (555) 0222",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0036",
+    "name": "St. Luke's Hospital",
+    "category": "hospital",
+    "latitude": 37.760855,
+    "longitude": -122.41373,
+    "address": "407 Health Ave, Sector 8",
+    "phone": "+1 (555) 0277",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0037",
+    "name": "Highland Medical & Trauma",
+    "category": "hospital",
+    "latitude": 37.778619,
+    "longitude": -122.415788,
+    "address": "60 Health Ave, Sector 6",
+    "phone": "+1 (555) 0238",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0038",
+    "name": "Riverside 24h Urgent Care",
+    "category": "hospital",
+    "latitude": 37.778079,
+    "longitude": -122.436565,
+    "address": "223 Health Ave, Sector 8",
+    "phone": "+1 (555) 0220",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0039",
+    "name": "Valley Emergency Clinic",
+    "category": "hospital",
+    "latitude": 37.773942,
+    "longitude": -122.413843,
+    "address": "379 Health Ave, Sector 9",
+    "phone": "+1 (555) 0263",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0040",
+    "name": "Grand City Hospital",
+    "category": "hospital",
+    "latitude": 37.784561,
+    "longitude": -122.40763,
+    "address": "69 Health Ave, Sector 5",
+    "phone": "+1 (555) 0277",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0041",
+    "name": "Tech Park Medical & First Aid",
+    "category": "hospital",
+    "latitude": 37.76112,
+    "longitude": -122.436584,
+    "address": "321 Health Ave, Sector 2",
+    "phone": "+1 (555) 0237",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0042",
+    "name": "Harbor View Health Center",
+    "category": "hospital",
+    "latitude": 37.788718,
+    "longitude": -122.435515,
+    "address": "752 Health Ave, Sector 4",
+    "phone": "+1 (555) 0278",
+    "is_24_7": true,
+    "emergency_types": [
+      "AMBULANCE",
+      "MEDICAL",
+      "TRAUMA"
+    ]
+  },
+  {
+    "id": "SAF-0043",
+    "name": "24/7 Apollo Pharmacy & First Aid",
+    "category": "pharmacy",
+    "latitude": 37.77146,
+    "longitude": -122.431675,
+    "address": "682 Broadway, Zone 4",
+    "phone": "+1 (555) 0382",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0044",
+    "name": "MedPlus 24-Hour Chemist",
+    "category": "pharmacy",
+    "latitude": 37.77866,
+    "longitude": -122.432244,
+    "address": "777 Broadway, Zone 7",
+    "phone": "+1 (555) 0323",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0045",
+    "name": "Guardian All-Night Pharmacy",
+    "category": "pharmacy",
+    "latitude": 37.782889,
+    "longitude": -122.416337,
+    "address": "700 Broadway, Zone 8",
+    "phone": "+1 (555) 0399",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0046",
+    "name": "Transit Station 24/7 Security Kiosk",
+    "category": "safe_haven",
+    "latitude": 37.779857,
+    "longitude": -122.404087,
+    "address": "180 Broadway, Zone 3",
+    "phone": "+1 (555) 0380",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0047",
+    "name": "City Hall 24-Hour Safe Haven",
+    "category": "safe_haven",
+    "latitude": 37.771947,
+    "longitude": -122.425899,
+    "address": "171 Broadway, Zone 8",
+    "phone": "+1 (555) 0355",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0048",
+    "name": "WellSpring 24h Community Shelter",
+    "category": "safe_haven",
+    "latitude": 37.786975,
+    "longitude": -122.417397,
+    "address": "342 Broadway, Zone 6",
+    "phone": "+1 (555) 0362",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0049",
+    "name": "7-Eleven 24h Safe Beacon Station",
+    "category": "safe_haven",
+    "latitude": 37.782826,
+    "longitude": -122.422176,
+    "address": "753 Broadway, Zone 6",
+    "phone": "+1 (555) 0387",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0050",
+    "name": "Metro Hub Help & Information Desk",
+    "category": "safe_haven",
+    "latitude": 37.767122,
+    "longitude": -122.417575,
+    "address": "394 Broadway, Zone 5",
+    "phone": "+1 (555) 0356",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0051",
+    "name": "Campus 24/7 Escort Hub",
+    "category": "safe_haven",
+    "latitude": 37.78875,
+    "longitude": -122.4215,
+    "address": "416 Broadway, Zone 1",
+    "phone": "+1 (555) 0314",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0052",
+    "name": "Downtown Women Support Center",
+    "category": "safe_haven",
+    "latitude": 37.789389,
+    "longitude": -122.415569,
+    "address": "540 Broadway, Zone 3",
+    "phone": "+1 (555) 0348",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0053",
+    "name": "Civic Center 24-Hour Well-Lit Plaza",
+    "category": "safe_haven",
+    "latitude": 37.760097,
+    "longitude": -122.400024,
+    "address": "229 Broadway, Zone 6",
+    "phone": "+1 (555) 0312",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0054",
+    "name": "Fire Station No. 1 Safe Zone",
+    "category": "fire_station",
+    "latitude": 37.783046,
+    "longitude": -122.401666,
+    "address": "852 Broadway, Zone 5",
+    "phone": "+1 (555) 0380",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0055",
+    "name": "Fire Station No. 4 Emergency Hub",
+    "category": "fire_station",
+    "latitude": 37.775238,
+    "longitude": -122.416573,
+    "address": "595 Broadway, Zone 3",
+    "phone": "+1 (555) 0322",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0056",
+    "name": "Shell 24h Service Station & SOS Point",
+    "category": "safe_haven",
+    "latitude": 37.761032,
+    "longitude": -122.425174,
+    "address": "151 Broadway, Zone 5",
+    "phone": "+1 (555) 0356",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0057",
+    "name": "Central Library 24h Security Desk",
+    "category": "safe_haven",
+    "latitude": 37.786589,
+    "longitude": -122.429406,
+    "address": "272 Broadway, Zone 5",
+    "phone": "+1 (555) 0321",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0058",
+    "name": "Red Cross Community First Response Station",
+    "category": "safe_haven",
+    "latitude": 37.777015,
+    "longitude": -122.416637,
+    "address": "232 Broadway, Zone 2",
+    "phone": "+1 (555) 0351",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0059",
+    "name": "Westside 24/7 Transit Shelter",
+    "category": "safe_haven",
+    "latitude": 37.783687,
+    "longitude": -122.432484,
+    "address": "855 Broadway, Zone 2",
+    "phone": "+1 (555) 0386",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0060",
+    "name": "North Star Emergency Kiosk",
+    "category": "safe_haven",
+    "latitude": 37.779168,
+    "longitude": -122.437905,
+    "address": "837 Broadway, Zone 7",
+    "phone": "+1 (555) 0320",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0061",
+    "name": "Beacon 24h Safe Haven Point",
+    "category": "safe_haven",
+    "latitude": 37.783304,
+    "longitude": -122.402525,
+    "address": "352 Broadway, Zone 6",
+    "phone": "+1 (555) 0365",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  },
+  {
+    "id": "SAF-0062",
+    "name": "City Guardian 24/7 Help Point",
+    "category": "safe_haven",
+    "latitude": 37.772396,
+    "longitude": -122.404687,
+    "address": "798 Broadway, Zone 4",
+    "phone": "+1 (555) 0393",
+    "is_24_7": true,
+    "emergency_types": [
+      "SHELTER",
+      "FIRST_AID",
+      "SAFE_HAVEN"
+    ]
+  }
+]

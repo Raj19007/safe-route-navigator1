@@ -1,0 +1,190 @@
+id,user_id,category,severity,description,latitude,longitude,status,reliability,created_at
+REP-0001,USR-008,Accident,LOW,"Two-wheeler skid due to loose gravel, slow traffic.",37.773122,-122.413995,REJECTED,0.5,2026-08-02T21:44:36.519245Z
+REP-0002,USR-009,Suspicious Activity,LOW,Unmarked vehicles parked with headlights off in quiet alleyway.,37.773102,-122.414038,VERIFIED,0.8,2026-08-19T17:29:34.322385Z
+REP-0003,USR-006,Road Blocked,LOW,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.793875,-122.410452,PENDING,0.5,2026-08-07T12:00:14.482978Z
+REP-0004,USR-001,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.770357,-122.423948,VERIFIED,0.8,2026-07-22T10:36:00.339836Z
+REP-0005,USR-001,Harassment,MEDIUM,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.781649,-122.397319,PENDING,0.5,2026-08-06T12:06:43.634661Z
+REP-0006,USR-012,Poor Lighting,HIGH,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.7664,-122.393948,PENDING,1.0,2026-07-27T07:34:40.631506Z
+REP-0007,USR-011,Harassment,CRITICAL,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.766996,-122.403887,VERIFIED,1.0,2026-08-08T19:53:29.095567Z
+REP-0008,USR-006,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.767396,-122.42082,PENDING,0.8,2026-08-21T01:14:57.855277Z
+REP-0009,USR-008,Road Blocked,MEDIUM,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.785321,-122.407056,VERIFIED,1.0,2026-08-17T22:31:45.461161Z
+REP-0010,USR-011,Isolated Area,LOW,"No open shops, deserted street after 9 PM, no security presence.",37.794323,-122.403468,VERIFIED,0.8,2026-08-18T20:24:38.710606Z
+REP-0011,USR-007,Road Blocked,LOW,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.772947,-122.40287,VERIFIED,0.5,2026-08-02T12:01:35.295926Z
+REP-0012,USR-008,Accident,CRITICAL,"Two-wheeler skid due to loose gravel, slow traffic.",37.761477,-122.421373,PENDING,0.8,2026-08-18T08:48:02.475492Z
+REP-0013,USR-004,Poor Lighting,MEDIUM,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.784623,-122.392995,PENDING,0.5,2026-08-04T11:48:52.598515Z
+REP-0014,USR-002,Unsafe Crowd,HIGH,Rowdy unorganized group blocking pedestrian walkway.,37.773076,-122.434555,VERIFIED,0.5,2026-08-16T09:04:16.019579Z
+REP-0015,USR-009,Other,CRITICAL,Broken glass bottles scattered across cycling path.,37.767328,-122.434603,VERIFIED,0.5,2026-08-19T22:00:46.740168Z
+REP-0016,USR-010,Suspicious Activity,HIGH,Unmarked vehicles parked with headlights off in quiet alleyway.,37.764273,-122.403921,PENDING,1.0,2026-08-02T11:52:11.666123Z
+REP-0017,USR-005,Unsafe Crowd,HIGH,Rowdy unorganized group blocking pedestrian walkway.,37.767296,-122.407015,VERIFIED,1.0,2026-08-20T14:52:43.552463Z
+REP-0018,USR-002,Accident,LOW,"Two-wheeler skid due to loose gravel, slow traffic.",37.767281,-122.420887,VERIFIED,0.5,2026-08-15T09:07:24.396293Z
+REP-0019,USR-002,Isolated Area,MEDIUM,"No open shops, deserted street after 9 PM, no security presence.",37.761392,-122.420869,PENDING,1.0,2026-08-19T23:18:47.316653Z
+REP-0020,USR-002,Suspicious Activity,LOW,Unmarked vehicles parked with headlights off in quiet alleyway.,37.761456,-122.41422,REJECTED,0.8,2026-07-29T05:28:46.952792Z
+REP-0021,USR-007,Isolated Area,MEDIUM,"No open shops, deserted street after 9 PM, no security presence.",37.778421,-122.392971,VERIFIED,1.0,2026-08-15T17:32:31.895225Z
+REP-0022,USR-004,Suspicious Activity,LOW,Unmarked vehicles parked with headlights off in quiet alleyway.,37.773355,-122.396658,VERIFIED,1.0,2026-08-18T01:37:27.343209Z
+REP-0023,USR-015,Isolated Area,LOW,"No open shops, deserted street after 9 PM, no security presence.",37.784703,-122.428061,VERIFIED,1.0,2026-08-20T22:27:59.611873Z
+REP-0024,USR-006,Unsafe Crowd,HIGH,Rowdy unorganized group blocking pedestrian walkway.,37.766751,-122.393685,VERIFIED,0.8,2026-08-05T16:32:28.181890Z
+REP-0025,USR-009,Poor Lighting,MEDIUM,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.773244,-122.407131,VERIFIED,0.8,2026-08-17T17:55:12.930427Z
+REP-0026,USR-001,Accident,HIGH,"Two-wheeler skid due to loose gravel, slow traffic.",37.785166,-122.39249,VERIFIED,1.0,2026-08-20T09:01:39.880869Z
+REP-0027,USR-013,Suspicious Activity,MEDIUM,Unmarked vehicles parked with headlights off in quiet alleyway.,37.785319,-122.40061,VERIFIED,0.8,2026-08-16T23:37:53.711697Z
+REP-0028,USR-009,Suspicious Activity,MEDIUM,Unmarked vehicles parked with headlights off in quiet alleyway.,37.788002,-122.431246,PENDING,0.8,2026-07-22T23:36:55.204781Z
+REP-0029,USR-015,Poor Lighting,HIGH,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.767557,-122.421076,VERIFIED,0.8,2026-08-18T22:32:12.545636Z
+REP-0030,USR-012,Unsafe Crowd,MEDIUM,Rowdy unorganized group blocking pedestrian walkway.,37.763672,-122.431623,VERIFIED,1.0,2026-08-05T03:21:28.383475Z
+REP-0031,USR-006,Isolated Area,HIGH,"No open shops, deserted street after 9 PM, no security presence.",37.76048,-122.396472,VERIFIED,0.8,2026-07-22T12:46:00.339836Z
+REP-0032,USR-012,Unsafe Crowd,MEDIUM,Rowdy unorganized group blocking pedestrian walkway.,37.766883,-122.427861,PENDING,1.0,2026-08-11T07:05:33.489020Z
+REP-0033,USR-012,Road Blocked,MEDIUM,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.767202,-122.403648,VERIFIED,0.5,2026-08-16T15:35:46.301957Z
+REP-0034,USR-006,Accident,LOW,"Two-wheeler skid due to loose gravel, slow traffic.",37.781569,-122.397052,REJECTED,0.5,2026-07-26T22:23:24.660361Z
+REP-0035,USR-015,Harassment,CRITICAL,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.767547,-122.399936,PENDING,1.0,2026-08-11T05:03:57.283891Z
+REP-0036,USR-007,Road Blocked,LOW,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.775567,-122.395992,PENDING,0.5,2026-08-09T17:24:40.553283Z
+REP-0037,USR-014,Isolated Area,MEDIUM,"No open shops, deserted street after 9 PM, no security presence.",37.794034,-122.403825,VERIFIED,0.5,2026-08-16T00:09:39.821595Z
+REP-0038,USR-002,Poor Lighting,MEDIUM,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.785202,-122.400676,VERIFIED,0.8,2026-08-19T20:43:42.271482Z
+REP-0039,USR-015,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.770375,-122.396716,VERIFIED,1.0,2026-08-08T07:16:20.611923Z
+REP-0040,USR-004,Isolated Area,LOW,"No open shops, deserted street after 9 PM, no security presence.",37.793859,-122.424326,VERIFIED,0.8,2026-08-19T13:05:23.691727Z
+REP-0041,USR-007,Road Blocked,HIGH,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.779053,-122.421082,VERIFIED,0.5,2026-08-08T11:28:59.529221Z
+REP-0042,USR-003,Other,MEDIUM,Broken glass bottles scattered across cycling path.,37.781765,-122.424813,VERIFIED,0.5,2026-08-15T23:32:50.859575Z
+REP-0043,USR-007,Other,HIGH,Broken glass bottles scattered across cycling path.,37.757688,-122.404274,VERIFIED,1.0,2026-08-06T03:09:46.896827Z
+REP-0044,USR-010,Other,CRITICAL,Broken glass bottles scattered across cycling path.,37.775483,-122.431948,VERIFIED,0.8,2026-08-15T16:04:20.477283Z
+REP-0045,USR-014,Isolated Area,HIGH,"No open shops, deserted street after 9 PM, no security presence.",37.764338,-122.424641,VERIFIED,0.5,2026-08-20T15:30:42.025014Z
+REP-0046,USR-015,Accident,CRITICAL,"Two-wheeler skid due to loose gravel, slow traffic.",37.785415,-122.421138,VERIFIED,0.8,2026-08-01T07:54:49.663860Z
+REP-0047,USR-003,Suspicious Activity,LOW,Unmarked vehicles parked with headlights off in quiet alleyway.,37.78488,-122.424725,REJECTED,0.8,2026-08-12T23:17:00.403884Z
+REP-0048,USR-003,Isolated Area,LOW,"No open shops, deserted street after 9 PM, no security presence.",37.76728,-122.407136,REJECTED,1.0,2026-08-15T21:59:53.940241Z
+REP-0049,USR-009,Isolated Area,HIGH,"No open shops, deserted street after 9 PM, no security presence.",37.77055,-122.403138,VERIFIED,0.8,2026-08-20T20:00:10.803196Z
+REP-0050,USR-010,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.761282,-122.435187,VERIFIED,1.0,2026-08-14T02:56:47.002479Z
+REP-0051,USR-008,Unsafe Crowd,HIGH,Rowdy unorganized group blocking pedestrian walkway.,37.76095,-122.400132,VERIFIED,1.0,2026-08-18T02:30:10.289748Z
+REP-0052,USR-012,Isolated Area,LOW,"No open shops, deserted street after 9 PM, no security presence.",37.760287,-122.427911,VERIFIED,0.8,2026-08-11T19:02:10.028141Z
+REP-0053,USR-014,Unsafe Crowd,HIGH,Rowdy unorganized group blocking pedestrian walkway.,37.758752,-122.417608,VERIFIED,0.8,2026-07-29T22:11:02.507895Z
+REP-0054,USR-011,Unsafe Crowd,HIGH,Rowdy unorganized group blocking pedestrian walkway.,37.764021,-122.396786,PENDING,1.0,2026-08-15T12:25:24.549308Z
+REP-0055,USR-002,Unsafe Crowd,MEDIUM,Rowdy unorganized group blocking pedestrian walkway.,37.766946,-122.413456,VERIFIED,0.5,2026-08-16T06:19:59.488411Z
+REP-0056,USR-014,Poor Lighting,LOW,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.794144,-122.42481,VERIFIED,0.5,2026-08-02T07:03:35.106291Z
+REP-0057,USR-007,Road Blocked,HIGH,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.766392,-122.394136,PENDING,1.0,2026-08-17T03:01:01.774321Z
+REP-0058,USR-012,Other,HIGH,Broken glass bottles scattered across cycling path.,37.790523,-122.400378,VERIFIED,0.8,2026-08-12T14:05:16.133408Z
+REP-0059,USR-004,Accident,MEDIUM,"Two-wheeler skid due to loose gravel, slow traffic.",37.769884,-122.417602,VERIFIED,1.0,2026-08-02T03:47:52.608489Z
+REP-0060,USR-003,Poor Lighting,MEDIUM,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.788049,-122.404093,REJECTED,1.0,2026-08-06T05:41:40.582668Z
+REP-0061,USR-008,Road Blocked,CRITICAL,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.766954,-122.403653,PENDING,0.8,2026-08-17T16:13:07.943124Z
+REP-0062,USR-014,Harassment,MEDIUM,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.767075,-122.406805,VERIFIED,1.0,2026-08-04T03:11:50.750714Z
+REP-0063,USR-011,Other,LOW,Broken glass bottles scattered across cycling path.,37.785435,-122.403497,VERIFIED,0.8,2026-08-18T01:57:12.285837Z
+REP-0064,USR-015,Accident,MEDIUM,"Two-wheeler skid due to loose gravel, slow traffic.",37.772917,-122.427699,VERIFIED,0.5,2026-07-30T06:26:05.590622Z
+REP-0065,USR-007,Other,HIGH,Broken glass bottles scattered across cycling path.,37.790741,-122.435106,VERIFIED,0.8,2026-08-20T03:33:20.179494Z
+REP-0066,USR-009,Unsafe Crowd,CRITICAL,Rowdy unorganized group blocking pedestrian walkway.,37.793984,-122.39666,PENDING,1.0,2026-08-13T02:38:16.554298Z
+REP-0067,USR-012,Suspicious Activity,HIGH,Unmarked vehicles parked with headlights off in quiet alleyway.,37.790526,-122.404014,VERIFIED,0.5,2026-08-19T13:38:05.466397Z
+REP-0068,USR-004,Unsafe Crowd,CRITICAL,Rowdy unorganized group blocking pedestrian walkway.,37.794204,-122.410218,VERIFIED,0.8,2026-08-19T09:37:19.664307Z
+REP-0069,USR-010,Other,LOW,Broken glass bottles scattered across cycling path.,37.776312,-122.410656,VERIFIED,1.0,2026-08-18T13:00:12.347701Z
+REP-0070,USR-003,Road Blocked,CRITICAL,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.78147,-122.431578,VERIFIED,0.5,2026-08-01T07:37:21.825382Z
+REP-0071,USR-013,Suspicious Activity,HIGH,Unmarked vehicles parked with headlights off in quiet alleyway.,37.770518,-122.3966,PENDING,0.5,2026-07-28T18:59:20.223984Z
+REP-0072,USR-010,Poor Lighting,MEDIUM,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.781872,-122.424438,VERIFIED,0.5,2026-08-17T21:13:15.696276Z
+REP-0073,USR-007,Isolated Area,MEDIUM,"No open shops, deserted street after 9 PM, no security presence.",37.782144,-122.424562,VERIFIED,0.8,2026-08-20T02:59:27.657929Z
+REP-0074,USR-001,Unsafe Crowd,CRITICAL,Rowdy unorganized group blocking pedestrian walkway.,37.760504,-122.427715,VERIFIED,1.0,2026-07-22T09:02:41.165657Z
+REP-0075,USR-005,Road Blocked,MEDIUM,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.767219,-122.40393,VERIFIED,0.5,2026-08-20T03:33:19.087502Z
+REP-0076,USR-006,Suspicious Activity,HIGH,Unmarked vehicles parked with headlights off in quiet alleyway.,37.778809,-122.400108,REJECTED,0.8,2026-08-17T05:26:44.342427Z
+REP-0077,USR-010,Accident,MEDIUM,"Two-wheeler skid due to loose gravel, slow traffic.",37.76487,-122.417385,VERIFIED,0.5,2026-08-16T10:03:29.176676Z
+REP-0078,USR-011,Road Blocked,LOW,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.764375,-122.417509,VERIFIED,0.5,2026-08-05T19:45:04.335648Z
+REP-0079,USR-012,Isolated Area,LOW,"No open shops, deserted street after 9 PM, no security presence.",37.788305,-122.404076,VERIFIED,0.8,2026-08-20T06:37:56.075099Z
+REP-0080,USR-010,Harassment,CRITICAL,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.764419,-122.403821,VERIFIED,1.0,2026-08-17T20:19:54.064016Z
+REP-0081,USR-004,Road Blocked,LOW,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.776338,-122.410792,PENDING,0.8,2026-08-08T22:29:36.711484Z
+REP-0082,USR-015,Road Blocked,MEDIUM,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.773065,-122.434527,VERIFIED,0.8,2026-08-17T02:08:09.258712Z
+REP-0083,USR-008,Harassment,MEDIUM,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.791814,-122.39299,PENDING,1.0,2026-08-21T09:34:31.464179Z
+REP-0084,USR-005,Road Blocked,MEDIUM,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.760931,-122.407632,VERIFIED,0.8,2026-08-08T11:38:11.636088Z
+REP-0085,USR-002,Unsafe Crowd,CRITICAL,Rowdy unorganized group blocking pedestrian walkway.,37.758364,-122.418056,VERIFIED,1.0,2026-08-21T03:49:29.924018Z
+REP-0086,USR-015,Unsafe Crowd,HIGH,Rowdy unorganized group blocking pedestrian walkway.,37.760806,-122.42528,REJECTED,0.8,2026-08-11T03:06:21.887298Z
+REP-0087,USR-014,Other,HIGH,Broken glass bottles scattered across cycling path.,37.775441,-122.432059,PENDING,1.0,2026-08-16T04:50:26.654276Z
+REP-0088,USR-008,Poor Lighting,LOW,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.776229,-122.410376,VERIFIED,1.0,2026-08-20T05:13:22.751889Z
+REP-0089,USR-015,Suspicious Activity,CRITICAL,Unmarked vehicles parked with headlights off in quiet alleyway.,37.763979,-122.410329,REJECTED,0.5,2026-08-11T21:46:35.886935Z
+REP-0090,USR-012,Accident,HIGH,"Two-wheeler skid due to loose gravel, slow traffic.",37.778944,-122.407043,VERIFIED,1.0,2026-08-17T15:24:58.311492Z
+REP-0091,USR-015,Isolated Area,LOW,"No open shops, deserted street after 9 PM, no security presence.",37.775788,-122.40357,PENDING,1.0,2026-08-17T04:21:35.419435Z
+REP-0092,USR-006,Other,MEDIUM,Broken glass bottles scattered across cycling path.,37.761197,-122.435467,VERIFIED,0.8,2026-08-02T11:12:52.704923Z
+REP-0093,USR-008,Isolated Area,MEDIUM,"No open shops, deserted street after 9 PM, no security presence.",37.773528,-122.403235,PENDING,0.5,2026-08-18T22:00:06.517070Z
+REP-0094,USR-001,Other,LOW,Broken glass bottles scattered across cycling path.,37.78508,-122.400574,VERIFIED,0.8,2026-08-15T16:44:42.655889Z
+REP-0095,USR-006,Road Blocked,MEDIUM,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.785047,-122.407223,PENDING,0.8,2026-08-12T04:14:18.032040Z
+REP-0096,USR-002,Other,HIGH,Broken glass bottles scattered across cycling path.,37.758794,-122.417654,PENDING,0.5,2026-08-17T08:35:40.166474Z
+REP-0097,USR-008,Unsafe Crowd,CRITICAL,Rowdy unorganized group blocking pedestrian walkway.,37.757712,-122.432109,VERIFIED,0.5,2026-07-22T13:28:00.339836Z
+REP-0098,USR-004,Accident,LOW,"Two-wheeler skid due to loose gravel, slow traffic.",37.793426,-122.417574,REJECTED,0.8,2026-08-18T15:51:47.558760Z
+REP-0099,USR-009,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.767111,-122.413939,VERIFIED,1.0,2026-08-15T23:35:34.320394Z
+REP-0100,USR-012,Other,MEDIUM,Broken glass bottles scattered across cycling path.,37.784459,-122.427949,PENDING,0.5,2026-08-13T10:53:52.825804Z
+REP-0101,USR-013,Isolated Area,MEDIUM,"No open shops, deserted street after 9 PM, no security presence.",37.760845,-122.399832,REJECTED,1.0,2026-07-31T01:20:01.075053Z
+REP-0102,USR-015,Suspicious Activity,MEDIUM,Unmarked vehicles parked with headlights off in quiet alleyway.,37.772999,-122.42792,VERIFIED,1.0,2026-08-17T21:28:14.937799Z
+REP-0103,USR-005,Accident,MEDIUM,"Two-wheeler skid due to loose gravel, slow traffic.",37.770524,-122.410123,VERIFIED,1.0,2026-08-17T15:14:50.393218Z
+REP-0104,USR-009,Unsafe Crowd,CRITICAL,Rowdy unorganized group blocking pedestrian walkway.,37.788071,-122.396537,VERIFIED,0.8,2026-07-22T14:26:00.339836Z
+REP-0105,USR-002,Road Blocked,CRITICAL,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.784908,-122.392674,PENDING,1.0,2026-08-15T23:53:24.925348Z
+REP-0106,USR-014,Suspicious Activity,HIGH,Unmarked vehicles parked with headlights off in quiet alleyway.,37.778517,-122.434685,PENDING,0.5,2026-08-19T04:01:29.694428Z
+REP-0107,USR-012,Other,LOW,Broken glass bottles scattered across cycling path.,37.791725,-122.393066,VERIFIED,1.0,2026-08-13T17:55:15.170263Z
+REP-0108,USR-007,Road Blocked,LOW,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.767248,-122.4038,REJECTED,0.8,2026-08-18T16:09:36.157977Z
+REP-0109,USR-012,Other,MEDIUM,Broken glass bottles scattered across cycling path.,37.785079,-122.406831,REJECTED,1.0,2026-08-19T02:04:03.660966Z
+REP-0110,USR-002,Accident,HIGH,"Two-wheeler skid due to loose gravel, slow traffic.",37.788313,-122.431304,VERIFIED,1.0,2026-08-06T08:30:35.765214Z
+REP-0111,USR-001,Road Blocked,MEDIUM,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.767703,-122.421058,VERIFIED,0.8,2026-08-21T03:37:39.138257Z
+REP-0112,USR-005,Poor Lighting,HIGH,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.778816,-122.393433,VERIFIED,1.0,2026-08-19T21:08:51.379821Z
+REP-0113,USR-003,Accident,MEDIUM,"Two-wheeler skid due to loose gravel, slow traffic.",37.785141,-122.401045,VERIFIED,1.0,2026-08-09T04:17:16.779856Z
+REP-0114,USR-013,Unsafe Crowd,HIGH,Rowdy unorganized group blocking pedestrian walkway.,37.782054,-122.404112,VERIFIED,0.5,2026-08-19T02:08:01.599919Z
+REP-0115,USR-015,Harassment,CRITICAL,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.781534,-122.431384,VERIFIED,0.5,2026-07-22T15:53:00.339836Z
+REP-0116,USR-005,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.761209,-122.425171,VERIFIED,1.0,2026-07-27T13:37:40.216258Z
+REP-0117,USR-004,Other,LOW,Broken glass bottles scattered across cycling path.,37.785657,-122.421234,VERIFIED,1.0,2026-08-05T06:28:51.177023Z
+REP-0118,USR-011,Poor Lighting,HIGH,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.782159,-122.417594,VERIFIED,1.0,2026-07-22T09:22:00.339836Z
+REP-0119,USR-012,Isolated Area,HIGH,"No open shops, deserted street after 9 PM, no security presence.",37.790759,-122.400539,PENDING,0.5,2026-08-13T16:46:07.374160Z
+REP-0120,USR-014,Suspicious Activity,HIGH,Unmarked vehicles parked with headlights off in quiet alleyway.,37.758144,-122.424904,VERIFIED,1.0,2026-08-20T17:31:06.497209Z
+REP-0121,USR-001,Poor Lighting,MEDIUM,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.77281,-122.43484,PENDING,1.0,2026-08-16T08:52:57.991228Z
+REP-0122,USR-010,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.784593,-122.392566,PENDING,0.8,2026-08-17T01:25:07.530560Z
+REP-0123,USR-003,Poor Lighting,MEDIUM,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.770327,-122.417369,VERIFIED,0.5,2026-08-16T09:39:55.407410Z
+REP-0124,USR-003,Unsafe Crowd,MEDIUM,Rowdy unorganized group blocking pedestrian walkway.,37.781909,-122.403786,VERIFIED,1.0,2026-08-17T19:26:48.694655Z
+REP-0125,USR-015,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.760803,-122.425005,VERIFIED,1.0,2026-08-13T14:59:52.170531Z
+REP-0126,USR-004,Suspicious Activity,MEDIUM,Unmarked vehicles parked with headlights off in quiet alleyway.,37.767042,-122.406824,VERIFIED,0.8,2026-08-14T10:07:33.193734Z
+REP-0127,USR-005,Other,LOW,Broken glass bottles scattered across cycling path.,37.764015,-122.410456,VERIFIED,0.5,2026-08-20T20:07:42.638376Z
+REP-0128,USR-015,Accident,LOW,"Two-wheeler skid due to loose gravel, slow traffic.",37.767542,-122.410538,VERIFIED,0.5,2026-08-17T14:26:49.704024Z
+REP-0129,USR-003,Suspicious Activity,HIGH,Unmarked vehicles parked with headlights off in quiet alleyway.,37.770295,-122.403489,PENDING,0.8,2026-08-10T15:31:35.708897Z
+REP-0130,USR-006,Road Blocked,HIGH,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.770151,-122.403553,VERIFIED,1.0,2026-08-08T01:06:19.220817Z
+REP-0131,USR-015,Suspicious Activity,LOW,Unmarked vehicles parked with headlights off in quiet alleyway.,37.778658,-122.393061,PENDING,0.5,2026-08-14T22:51:06.305680Z
+REP-0132,USR-010,Poor Lighting,HIGH,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.767265,-122.410298,VERIFIED,1.0,2026-08-20T20:13:34.546505Z
+REP-0133,USR-015,Other,MEDIUM,Broken glass bottles scattered across cycling path.,37.788113,-122.431644,VERIFIED,0.5,2026-08-18T07:52:05.642915Z
+REP-0134,USR-011,Poor Lighting,HIGH,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.767139,-122.434648,VERIFIED,1.0,2026-08-16T10:21:04.015757Z
+REP-0135,USR-004,Suspicious Activity,CRITICAL,Unmarked vehicles parked with headlights off in quiet alleyway.,37.782194,-122.417556,REJECTED,0.5,2026-08-13T02:36:18.746842Z
+REP-0136,USR-015,Unsafe Crowd,HIGH,Rowdy unorganized group blocking pedestrian walkway.,37.763978,-122.397149,VERIFIED,0.8,2026-08-21T03:41:58.835399Z
+REP-0137,USR-003,Road Blocked,HIGH,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.761388,-122.425169,VERIFIED,1.0,2026-08-09T07:33:19.861102Z
+REP-0138,USR-009,Road Blocked,CRITICAL,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.78803,-122.403752,REJECTED,0.5,2026-07-29T18:53:54.570024Z
+REP-0139,USR-003,Poor Lighting,HIGH,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.773716,-122.396563,PENDING,0.8,2026-08-05T14:46:17.394069Z
+REP-0140,USR-011,Unsafe Crowd,CRITICAL,Rowdy unorganized group blocking pedestrian walkway.,37.761752,-122.41409,PENDING,0.5,2026-08-19T23:32:39.582742Z
+REP-0141,USR-014,Other,MEDIUM,Broken glass bottles scattered across cycling path.,37.776326,-122.410422,VERIFIED,1.0,2026-08-14T22:13:24.218626Z
+REP-0142,USR-005,Poor Lighting,HIGH,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.760629,-122.43232,VERIFIED,0.5,2026-08-12T15:27:18.081669Z
+REP-0143,USR-008,Road Blocked,LOW,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.785739,-122.421099,VERIFIED,1.0,2026-08-13T08:47:25.664317Z
+REP-0144,USR-006,Suspicious Activity,HIGH,Unmarked vehicles parked with headlights off in quiet alleyway.,37.764433,-122.41769,VERIFIED,1.0,2026-08-19T22:01:40.305943Z
+REP-0145,USR-011,Poor Lighting,LOW,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.790853,-122.43516,VERIFIED,1.0,2026-08-16T18:10:52.285466Z
+REP-0146,USR-002,Poor Lighting,HIGH,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.76425,-122.424935,VERIFIED,0.5,2026-07-29T06:19:18.869256Z
+REP-0147,USR-012,Isolated Area,HIGH,"No open shops, deserted street after 9 PM, no security presence.",37.790629,-122.407424,VERIFIED,0.5,2026-08-03T18:30:13.901580Z
+REP-0148,USR-010,Unsafe Crowd,CRITICAL,Rowdy unorganized group blocking pedestrian walkway.,37.779117,-122.414003,PENDING,1.0,2026-08-05T22:39:07.202987Z
+REP-0149,USR-007,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.779059,-122.414198,VERIFIED,1.0,2026-08-18T17:07:16.913530Z
+REP-0150,USR-004,Harassment,CRITICAL,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.766685,-122.413558,VERIFIED,1.0,2026-08-21T09:47:11.807384Z
+REP-0151,USR-005,Road Blocked,CRITICAL,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.778852,-122.421422,VERIFIED,1.0,2026-08-11T00:45:34.931936Z
+REP-0152,USR-006,Other,HIGH,Broken glass bottles scattered across cycling path.,37.76425,-122.403729,REJECTED,1.0,2026-08-14T22:42:57.838619Z
+REP-0153,USR-007,Other,MEDIUM,Broken glass bottles scattered across cycling path.,37.794046,-122.396566,VERIFIED,1.0,2026-08-20T07:34:09.453947Z
+REP-0154,USR-015,Poor Lighting,LOW,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.785415,-122.406867,PENDING,0.8,2026-08-20T23:48:13.948542Z
+REP-0155,USR-005,Isolated Area,MEDIUM,"No open shops, deserted street after 9 PM, no security presence.",37.760502,-122.407544,VERIFIED,1.0,2026-08-20T19:36:41.310966Z
+REP-0156,USR-009,Road Blocked,MEDIUM,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.767646,-122.420866,VERIFIED,1.0,2026-08-19T04:16:58.519059Z
+REP-0157,USR-013,Poor Lighting,LOW,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.794129,-122.431813,VERIFIED,0.8,2026-08-21T05:06:07.864070Z
+REP-0158,USR-014,Harassment,MEDIUM,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.773628,-122.396527,VERIFIED,1.0,2026-08-19T10:11:09.032682Z
+REP-0159,USR-001,Accident,CRITICAL,"Two-wheeler skid due to loose gravel, slow traffic.",37.784775,-122.392497,REJECTED,1.0,2026-08-18T05:06:13.277676Z
+REP-0160,USR-015,Unsafe Crowd,MEDIUM,Rowdy unorganized group blocking pedestrian walkway.,37.767507,-122.421066,PENDING,0.8,2026-08-20T19:24:59.769302Z
+REP-0161,USR-011,Accident,HIGH,"Two-wheeler skid due to loose gravel, slow traffic.",37.784961,-122.400823,REJECTED,0.8,2026-08-16T18:13:56.627393Z
+REP-0162,USR-006,Accident,MEDIUM,"Two-wheeler skid due to loose gravel, slow traffic.",37.788503,-122.431377,PENDING,0.8,2026-08-18T13:08:27.368943Z
+REP-0163,USR-002,Isolated Area,HIGH,"No open shops, deserted street after 9 PM, no security presence.",37.78506,-122.413915,PENDING,0.8,2026-08-18T18:40:47.935267Z
+REP-0164,USR-004,Suspicious Activity,MEDIUM,Unmarked vehicles parked with headlights off in quiet alleyway.,37.767548,-122.420918,VERIFIED,0.5,2026-07-30T02:18:49.543804Z
+REP-0165,USR-015,Unsafe Crowd,MEDIUM,Rowdy unorganized group blocking pedestrian walkway.,37.77269,-122.434989,PENDING,0.5,2026-08-18T13:44:13.818110Z
+REP-0166,USR-008,Poor Lighting,MEDIUM,Multiple overhead street lamps completely broken. Pitch dark walking path.,37.788565,-122.396668,VERIFIED,0.8,2026-08-21T07:03:18.446356Z
+REP-0167,USR-008,Accident,MEDIUM,"Two-wheeler skid due to loose gravel, slow traffic.",37.781782,-122.424571,VERIFIED,0.8,2026-08-14T08:48:24.820470Z
+REP-0168,USR-006,Other,LOW,Broken glass bottles scattered across cycling path.,37.760485,-122.427917,PENDING,0.8,2026-08-10T00:12:02.998575Z
+REP-0169,USR-005,Road Blocked,MEDIUM,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.761215,-122.435333,VERIFIED,0.5,2026-08-20T11:22:50.642785Z
+REP-0170,USR-008,Unsafe Crowd,HIGH,Rowdy unorganized group blocking pedestrian walkway.,37.79141,-122.428265,PENDING,0.8,2026-08-16T00:00:42.472772Z
+REP-0171,USR-004,Road Blocked,MEDIUM,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.78489,-122.400743,VERIFIED,0.8,2026-08-19T00:49:07.907481Z
+REP-0172,USR-005,Suspicious Activity,HIGH,Unmarked vehicles parked with headlights off in quiet alleyway.,37.794052,-122.396601,PENDING,0.8,2026-08-19T13:03:46.125773Z
+REP-0173,USR-008,Road Blocked,CRITICAL,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.781578,-122.397354,PENDING,0.5,2026-08-19T19:18:54.794916Z
+REP-0174,USR-014,Unsafe Crowd,MEDIUM,Rowdy unorganized group blocking pedestrian walkway.,37.772782,-122.434775,VERIFIED,0.8,2026-07-25T17:08:06.984530Z
+REP-0175,USR-008,Road Blocked,HIGH,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.785157,-122.400699,VERIFIED,1.0,2026-08-19T11:15:53.854417Z
+REP-0176,USR-010,Suspicious Activity,HIGH,Unmarked vehicles parked with headlights off in quiet alleyway.,37.757632,-122.404172,VERIFIED,1.0,2026-08-11T14:58:58.899962Z
+REP-0177,USR-005,Road Blocked,HIGH,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.761491,-122.414052,VERIFIED,0.8,2026-08-17T16:06:50.131343Z
+REP-0178,USR-011,Suspicious Activity,LOW,Unmarked vehicles parked with headlights off in quiet alleyway.,37.773172,-122.393175,VERIFIED,0.5,2026-08-15T14:55:35.599094Z
+REP-0179,USR-013,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.79444,-122.431788,VERIFIED,0.5,2026-08-16T13:43:50.920913Z
+REP-0180,USR-005,Harassment,CRITICAL,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.782252,-122.410098,REJECTED,0.8,2026-08-18T13:34:17.600830Z
+REP-0181,USR-014,Suspicious Activity,LOW,Unmarked vehicles parked with headlights off in quiet alleyway.,37.766815,-122.393901,VERIFIED,0.8,2026-08-20T03:01:54.130893Z
+REP-0182,USR-009,Other,MEDIUM,Broken glass bottles scattered across cycling path.,37.781217,-122.431356,REJECTED,1.0,2026-07-25T03:48:01.510073Z
+REP-0183,USR-005,Isolated Area,HIGH,"No open shops, deserted street after 9 PM, no security presence.",37.788344,-122.431287,VERIFIED,1.0,2026-08-11T08:42:13.994706Z
+REP-0184,USR-001,Isolated Area,MEDIUM,"No open shops, deserted street after 9 PM, no security presence.",37.784304,-122.434166,VERIFIED,0.5,2026-08-15T16:52:42.196265Z
+REP-0185,USR-013,Other,CRITICAL,Broken glass bottles scattered across cycling path.,37.767066,-122.434673,VERIFIED,0.8,2026-08-21T06:04:44.306235Z
+REP-0186,USR-012,Isolated Area,MEDIUM,"No open shops, deserted street after 9 PM, no security presence.",37.790638,-122.435293,VERIFIED,1.0,2026-08-16T20:10:09.878329Z
+REP-0187,USR-013,Road Blocked,HIGH,"Construction barricades occupying the entire sidewalk, forced into traffic.",37.778563,-122.435039,VERIFIED,1.0,2026-08-11T15:56:39.319677Z
+REP-0188,USR-008,Other,CRITICAL,Broken glass bottles scattered across cycling path.,37.778748,-122.421474,VERIFIED,1.0,2026-08-20T03:45:34.392650Z
+REP-0189,USR-008,Harassment,HIGH,Verbal harassment reported near bus shelter. Individuals loitering aggressively.,37.773023,-122.407209,VERIFIED,1.0,2026-08-13T22:36:34.438216Z

@@ -1,0 +1,2950 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0001",
+        "name": "Pine Green Way 1",
+        "road_type": "residential_way",
+        "length_meters": 645.2,
+        "street_lighting": 0.7,
+        "pedestrian_infrastructure": 0.63,
+        "isolation_score": 0.52,
+        "traffic_density": 0.43,
+        "accessibility_score": 0.79
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43575998279165,
+            37.758223082877535
+          ],
+          [
+            -122.4323065281527,
+            37.757807664970656
+          ],
+          [
+            -122.42844286281895,
+            37.757640046909394
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0002",
+        "name": "Pine Green Way 2",
+        "road_type": "residential_way",
+        "length_meters": 671.8,
+        "street_lighting": 0.79,
+        "pedestrian_infrastructure": 0.82,
+        "isolation_score": 0.33,
+        "traffic_density": 0.35,
+        "accessibility_score": 0.64
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43575998279165,
+            37.758223082877535
+          ],
+          [
+            -122.43526066851443,
+            37.76111051586386
+          ],
+          [
+            -122.43492809363104,
+            37.76423981510045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0003",
+        "name": "Pine Green Way 3",
+        "road_type": "cycle_track",
+        "length_meters": 911.4,
+        "street_lighting": 0.56,
+        "pedestrian_infrastructure": 0.69,
+        "isolation_score": 0.3,
+        "traffic_density": 0.49,
+        "accessibility_score": 0.83
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43575998279165,
+            37.758223082877535
+          ],
+          [
+            -122.43209689280329,
+            37.7607823875706
+          ],
+          [
+            -122.4278571749058,
+            37.76355270499527
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0004",
+        "name": "Pine Green Way 4",
+        "road_type": "secondary_street",
+        "length_meters": 682.8,
+        "street_lighting": 0.57,
+        "pedestrian_infrastructure": 0.66,
+        "isolation_score": 0.42,
+        "traffic_density": 0.22,
+        "accessibility_score": 0.78
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42844286281895,
+            37.757640046909394
+          ],
+          [
+            -122.42480303694084,
+            37.75816870108361
+          ],
+          [
+            -122.42071728082013,
+            37.75837835394267
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0005",
+        "name": "Pine Green Way 5",
+        "road_type": "secondary_street",
+        "length_meters": 658.3,
+        "street_lighting": 0.78,
+        "pedestrian_infrastructure": 0.64,
+        "isolation_score": 0.41,
+        "traffic_density": 0.38,
+        "accessibility_score": 0.84
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42844286281895,
+            37.757640046909394
+          ],
+          [
+            -122.42785292924837,
+            37.760483405727115
+          ],
+          [
+            -122.4278571749058,
+            37.76355270499527
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0006",
+        "name": "Pine Green Way 6",
+        "road_type": "cycle_track",
+        "length_meters": 959.0,
+        "street_lighting": 0.61,
+        "pedestrian_infrastructure": 0.82,
+        "isolation_score": 0.39,
+        "traffic_density": 0.27,
+        "accessibility_score": 0.62
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42844286281895,
+            37.757640046909394
+          ],
+          [
+            -122.42506316833308,
+            37.7610999207335
+          ],
+          [
+            -122.42178960198453,
+            37.76449508873069
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0007",
+        "name": "Pine Green Way 7",
+        "road_type": "cycle_track",
+        "length_meters": 532.1,
+        "street_lighting": 0.69,
+        "pedestrian_infrastructure": 0.66,
+        "isolation_score": 0.52,
+        "traffic_density": 0.46,
+        "accessibility_score": 0.62
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42071728082013,
+            37.75837835394267
+          ],
+          [
+            -122.41786054725954,
+            37.75860430729248
+          ],
+          [
+            -122.41466089786779,
+            37.75862748730833
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0008",
+        "name": "Pine Green Way 8",
+        "road_type": "residential_way",
+        "length_meters": 685.4,
+        "street_lighting": 0.72,
+        "pedestrian_infrastructure": 0.82,
+        "isolation_score": 0.42,
+        "traffic_density": 0.27,
+        "accessibility_score": 0.72
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42071728082013,
+            37.75837835394267
+          ],
+          [
+            -122.42115805175261,
+            37.76119331681458
+          ],
+          [
+            -122.42178960198453,
+            37.76449508873069
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0009",
+        "name": "Market Cross 9",
+        "road_type": "commercial_avenue",
+        "length_meters": 611.9,
+        "street_lighting": 0.61,
+        "pedestrian_infrastructure": 0.69,
+        "isolation_score": 0.57,
+        "traffic_density": 0.69,
+        "accessibility_score": 0.44
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41466089786779,
+            37.75862748730833
+          ],
+          [
+            -122.411441049739,
+            37.75843163661643
+          ],
+          [
+            -122.4077523244489,
+            37.757875074911496
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0010",
+        "name": "Market Cross 10",
+        "road_type": "secondary_street",
+        "length_meters": 656.3,
+        "street_lighting": 0.49,
+        "pedestrian_infrastructure": 0.58,
+        "isolation_score": 0.47,
+        "traffic_density": 0.41,
+        "accessibility_score": 0.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41466089786779,
+            37.75862748730833
+          ],
+          [
+            -122.41395835728243,
+            37.76174321240247
+          ],
+          [
+            -122.41368297696802,
+            37.76448931080294
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0011",
+        "name": "Market Cross 11",
+        "road_type": "pedestrian_walkway",
+        "length_meters": 681.9,
+        "street_lighting": 0.85,
+        "pedestrian_infrastructure": 0.73,
+        "isolation_score": 0.69,
+        "traffic_density": 0.67,
+        "accessibility_score": 0.74
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4077523244489,
+            37.757875074911496
+          ],
+          [
+            -122.40404362961445,
+            37.757703832510856
+          ],
+          [
+            -122.39999143153904,
+            37.757549820759685
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0012",
+        "name": "Market Cross 12",
+        "road_type": "commercial_avenue",
+        "length_meters": 651.7,
+        "street_lighting": 0.81,
+        "pedestrian_infrastructure": 0.47,
+        "isolation_score": 0.3,
+        "traffic_density": 0.46,
+        "accessibility_score": 0.77
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4077523244489,
+            37.757875074911496
+          ],
+          [
+            -122.40737738804008,
+            37.760763542360564
+          ],
+          [
+            -122.4075512328003,
+            37.76374440082643
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0013",
+        "name": "Shadow Alley 13",
+        "road_type": "narrow_alley",
+        "length_meters": 572.1,
+        "street_lighting": 0.2,
+        "pedestrian_infrastructure": 0.27,
+        "isolation_score": 0.91,
+        "traffic_density": 0.37,
+        "accessibility_score": 0.46
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39999143153904,
+            37.757549820759685
+          ],
+          [
+            -122.3966861390923,
+            37.75713043831933
+          ],
+          [
+            -122.39348185975891,
+            37.7572424575515
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0014",
+        "name": "Industrial Way Sec 14",
+        "road_type": "secondary_street",
+        "length_meters": 797.5,
+        "street_lighting": 0.17,
+        "pedestrian_infrastructure": 0.33,
+        "isolation_score": 0.88,
+        "traffic_density": 0.22,
+        "accessibility_score": 0.32
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39999143153904,
+            37.757549820759685
+          ],
+          [
+            -122.39989226774496,
+            37.76091261280598
+          ],
+          [
+            -122.40026144872783,
+            37.764731540915534
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0015",
+        "name": "Industrial Way Sec 15",
+        "road_type": "secondary_street",
+        "length_meters": 851.1,
+        "street_lighting": 0.32,
+        "pedestrian_infrastructure": 0.21,
+        "isolation_score": 0.67,
+        "traffic_density": 0.4,
+        "accessibility_score": 0.47
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39999143153904,
+            37.757549820759685
+          ],
+          [
+            -122.39668862758757,
+            37.760271662574205
+          ],
+          [
+            -122.39364525379706,
+            37.76334839334941
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0016",
+        "name": "Industrial Way Sec 16",
+        "road_type": "secondary_street",
+        "length_meters": 677.9,
+        "street_lighting": 0.23,
+        "pedestrian_infrastructure": 0.23,
+        "isolation_score": 0.82,
+        "traffic_density": 0.34,
+        "accessibility_score": 0.58
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39348185975891,
+            37.7572424575515
+          ],
+          [
+            -122.39326448411347,
+            37.76027039676402
+          ],
+          [
+            -122.39364525379706,
+            37.76334839334941
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0017",
+        "name": "Pine Green Way 17",
+        "road_type": "residential_way",
+        "length_meters": 625.1,
+        "street_lighting": 0.66,
+        "pedestrian_infrastructure": 0.73,
+        "isolation_score": 0.29,
+        "traffic_density": 0.3,
+        "accessibility_score": 0.62
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43492809363104,
+            37.76423981510045
+          ],
+          [
+            -122.43142972352462,
+            37.76376725248259
+          ],
+          [
+            -122.4278571749058,
+            37.76355270499527
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0018",
+        "name": "Pine Green Way 18",
+        "road_type": "cycle_track",
+        "length_meters": 701.1,
+        "street_lighting": 0.71,
+        "pedestrian_infrastructure": 0.75,
+        "isolation_score": 0.55,
+        "traffic_density": 0.4,
+        "accessibility_score": 0.6
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43492809363104,
+            37.76423981510045
+          ],
+          [
+            -122.43465418981144,
+            37.767160054944455
+          ],
+          [
+            -122.43483403834982,
+            37.77055599098616
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0019",
+        "name": "Pine Green Way 19",
+        "road_type": "secondary_street",
+        "length_meters": 944.1,
+        "street_lighting": 0.53,
+        "pedestrian_infrastructure": 0.63,
+        "isolation_score": 0.42,
+        "traffic_density": 0.28,
+        "accessibility_score": 0.75
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43492809363104,
+            37.76423981510045
+          ],
+          [
+            -122.43106851369693,
+            37.767478108446134
+          ],
+          [
+            -122.42763242914128,
+            37.770491405237244
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0020",
+        "name": "Pine Green Way 20",
+        "road_type": "secondary_street",
+        "length_meters": 542.5,
+        "street_lighting": 0.77,
+        "pedestrian_infrastructure": 0.81,
+        "isolation_score": 0.28,
+        "traffic_density": 0.33,
+        "accessibility_score": 0.67
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4278571749058,
+            37.76355270499527
+          ],
+          [
+            -122.42474112041879,
+            37.764186568396795
+          ],
+          [
+            -122.42178960198453,
+            37.76449508873069
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0021",
+        "name": "Pine Green Way 21",
+        "road_type": "secondary_street",
+        "length_meters": 770.4,
+        "street_lighting": 0.55,
+        "pedestrian_infrastructure": 0.71,
+        "isolation_score": 0.46,
+        "traffic_density": 0.37,
+        "accessibility_score": 0.63
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4278571749058,
+            37.76355270499527
+          ],
+          [
+            -122.42782327243283,
+            37.766743671999095
+          ],
+          [
+            -122.42763242914128,
+            37.770491405237244
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0022",
+        "name": "Pine Green Way 22",
+        "road_type": "secondary_street",
+        "length_meters": 711.3,
+        "street_lighting": 0.54,
+        "pedestrian_infrastructure": 0.68,
+        "isolation_score": 0.52,
+        "traffic_density": 0.44,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42178960198453,
+            37.76449508873069
+          ],
+          [
+            -122.41763612942988,
+            37.7646014397798
+          ],
+          [
+            -122.41368297696802,
+            37.76448931080294
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0023",
+        "name": "Pine Green Way 23",
+        "road_type": "secondary_street",
+        "length_meters": 632.2,
+        "street_lighting": 0.73,
+        "pedestrian_infrastructure": 0.82,
+        "isolation_score": 0.37,
+        "traffic_density": 0.39,
+        "accessibility_score": 0.64
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42178960198453,
+            37.76449508873069
+          ],
+          [
+            -122.42082984534912,
+            37.767562250458276
+          ],
+          [
+            -122.42024301477764,
+            37.77005796494633
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0024",
+        "name": "Market Cross 24",
+        "road_type": "primary_arterial",
+        "length_meters": 544.3,
+        "street_lighting": 0.48,
+        "pedestrian_infrastructure": 0.77,
+        "isolation_score": 0.61,
+        "traffic_density": 0.46,
+        "accessibility_score": 0.67
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41368297696802,
+            37.76448931080294
+          ],
+          [
+            -122.41049633797127,
+            37.76391237452047
+          ],
+          [
+            -122.4075512328003,
+            37.76374440082643
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0025",
+        "name": "Market Cross 25",
+        "road_type": "commercial_avenue",
+        "length_meters": 590.5,
+        "street_lighting": 0.79,
+        "pedestrian_infrastructure": 0.74,
+        "isolation_score": 0.39,
+        "traffic_density": 0.63,
+        "accessibility_score": 0.58
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41368297696802,
+            37.76448931080294
+          ],
+          [
+            -122.41370383606935,
+            37.766981237031565
+          ],
+          [
+            -122.41391673498997,
+            37.76980565500354
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0026",
+        "name": "Market Cross 26",
+        "road_type": "commercial_avenue",
+        "length_meters": 901.5,
+        "street_lighting": 0.55,
+        "pedestrian_infrastructure": 0.75,
+        "isolation_score": 0.69,
+        "traffic_density": 0.41,
+        "accessibility_score": 0.66
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41368297696802,
+            37.76448931080294
+          ],
+          [
+            -122.41053011236104,
+            37.7674068690538
+          ],
+          [
+            -122.40681036839621,
+            37.77052704746281
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0027",
+        "name": "Market Cross 27",
+        "road_type": "residential_way",
+        "length_meters": 648.9,
+        "street_lighting": 0.48,
+        "pedestrian_infrastructure": 0.79,
+        "isolation_score": 0.41,
+        "traffic_density": 0.34,
+        "accessibility_score": 0.57
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4075512328003,
+            37.76374440082643
+          ],
+          [
+            -122.40389948692827,
+            37.76430169618296
+          ],
+          [
+            -122.40026144872783,
+            37.764731540915534
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0028",
+        "name": "Market Cross 28",
+        "road_type": "commercial_avenue",
+        "length_meters": 755.7,
+        "street_lighting": 0.8,
+        "pedestrian_infrastructure": 0.48,
+        "isolation_score": 0.32,
+        "traffic_density": 0.47,
+        "accessibility_score": 0.61
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4075512328003,
+            37.76374440082643
+          ],
+          [
+            -122.40691147590667,
+            37.7670945025844
+          ],
+          [
+            -122.40681036839621,
+            37.77052704746281
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0029",
+        "name": "Market Cross 29",
+        "road_type": "residential_way",
+        "length_meters": 1014.4,
+        "street_lighting": 0.68,
+        "pedestrian_infrastructure": 0.67,
+        "isolation_score": 0.35,
+        "traffic_density": 0.66,
+        "accessibility_score": 0.6
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4075512328003,
+            37.76374440082643
+          ],
+          [
+            -122.40383634156242,
+            37.7671030061657
+          ],
+          [
+            -122.3998762365676,
+            37.7705787310405
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0030",
+        "name": "Shadow Alley 30",
+        "road_type": "narrow_alley",
+        "length_meters": 600.4,
+        "street_lighting": 0.35,
+        "pedestrian_infrastructure": 0.29,
+        "isolation_score": 0.85,
+        "traffic_density": 0.25,
+        "accessibility_score": 0.47
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40026144872783,
+            37.764731540915534
+          ],
+          [
+            -122.39707102629289,
+            37.764240202234056
+          ],
+          [
+            -122.39364525379706,
+            37.76334839334941
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0031",
+        "name": "Industrial Way Sec 31",
+        "road_type": "secondary_street",
+        "length_meters": 649.9,
+        "street_lighting": 0.28,
+        "pedestrian_infrastructure": 0.34,
+        "isolation_score": 0.83,
+        "traffic_density": 0.34,
+        "accessibility_score": 0.43
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40026144872783,
+            37.764731540915534
+          ],
+          [
+            -122.39982813415222,
+            37.76763904768956
+          ],
+          [
+            -122.3998762365676,
+            37.7705787310405
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0032",
+        "name": "Industrial Way Sec 32",
+        "road_type": "secondary_street",
+        "length_meters": 774.7,
+        "street_lighting": 0.35,
+        "pedestrian_infrastructure": 0.27,
+        "isolation_score": 0.83,
+        "traffic_density": 0.39,
+        "accessibility_score": 0.33
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39364525379706,
+            37.76334839334941
+          ],
+          [
+            -122.39386648943197,
+            37.76667263854327
+          ],
+          [
+            -122.39372668098615,
+            37.770327314937944
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0033",
+        "name": "Pine Green Way 33",
+        "road_type": "residential_way",
+        "length_meters": 631.9,
+        "street_lighting": 0.8,
+        "pedestrian_infrastructure": 0.75,
+        "isolation_score": 0.48,
+        "traffic_density": 0.34,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43483403834982,
+            37.77055599098616
+          ],
+          [
+            -122.43123660744415,
+            37.770641510661996
+          ],
+          [
+            -122.42763242914128,
+            37.770491405237244
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0034",
+        "name": "Pine Green Way 34",
+        "road_type": "residential_way",
+        "length_meters": 557.7,
+        "street_lighting": 0.54,
+        "pedestrian_infrastructure": 0.77,
+        "isolation_score": 0.52,
+        "traffic_density": 0.46,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43483403834982,
+            37.77055599098616
+          ],
+          [
+            -122.43481072917866,
+            37.772865846122635
+          ],
+          [
+            -122.43533697925824,
+            37.77556463724105
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0035",
+        "name": "Pine Green Way 35",
+        "road_type": "residential_way",
+        "length_meters": 650.1,
+        "street_lighting": 0.67,
+        "pedestrian_infrastructure": 0.83,
+        "isolation_score": 0.29,
+        "traffic_density": 0.24,
+        "accessibility_score": 0.72
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42763242914128,
+            37.770491405237244
+          ],
+          [
+            -122.42380615758269,
+            37.77034227648545
+          ],
+          [
+            -122.42024301477764,
+            37.77005796494633
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0036",
+        "name": "Pine Green Way 36",
+        "road_type": "cycle_track",
+        "length_meters": 541.3,
+        "street_lighting": 0.63,
+        "pedestrian_infrastructure": 0.83,
+        "isolation_score": 0.38,
+        "traffic_density": 0.25,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42763242914128,
+            37.770491405237244
+          ],
+          [
+            -122.42782606412885,
+            37.77306060227206
+          ],
+          [
+            -122.42842753458181,
+            37.77532766716308
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0037",
+        "name": "Grand Blvd Sec 37",
+        "road_type": "pedestrian_walkway",
+        "length_meters": 555.8,
+        "street_lighting": 0.86,
+        "pedestrian_infrastructure": 0.76,
+        "isolation_score": 0.19,
+        "traffic_density": 0.81,
+        "accessibility_score": 0.76
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42024301477764,
+            37.77005796494633
+          ],
+          [
+            -122.4173315282892,
+            37.77016762607461
+          ],
+          [
+            -122.41391673498997,
+            37.76980565500354
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0038",
+        "name": "Central Ave Sec 38",
+        "road_type": "primary_arterial",
+        "length_meters": 596.7,
+        "street_lighting": 0.8,
+        "pedestrian_infrastructure": 0.87,
+        "isolation_score": 0.24,
+        "traffic_density": 0.62,
+        "accessibility_score": 0.8
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42024301477764,
+            37.77005796494633
+          ],
+          [
+            -122.42097502787263,
+            37.772659248157154
+          ],
+          [
+            -122.42135524223502,
+            37.775361602287056
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0039",
+        "name": "Grand Blvd Sec 39",
+        "road_type": "pedestrian_walkway",
+        "length_meters": 628.6,
+        "street_lighting": 0.97,
+        "pedestrian_infrastructure": 0.7,
+        "isolation_score": 0.28,
+        "traffic_density": 0.77,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41391673498997,
+            37.76980565500354
+          ],
+          [
+            -122.41015148292274,
+            37.77031843630821
+          ],
+          [
+            -122.40681036839621,
+            37.77052704746281
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0040",
+        "name": "Grand Blvd Sec 40",
+        "road_type": "commercial_avenue",
+        "length_meters": 712.2,
+        "street_lighting": 0.87,
+        "pedestrian_infrastructure": 0.88,
+        "isolation_score": 0.26,
+        "traffic_density": 0.87,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41391673498997,
+            37.76980565500354
+          ],
+          [
+            -122.41413318742987,
+            37.77300276025346
+          ],
+          [
+            -122.41421626851366,
+            37.77621709511082
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0041",
+        "name": "Grand Blvd Sec 41",
+        "road_type": "commercial_avenue",
+        "length_meters": 608.4,
+        "street_lighting": 0.92,
+        "pedestrian_infrastructure": 0.91,
+        "isolation_score": 0.28,
+        "traffic_density": 0.89,
+        "accessibility_score": 0.83
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40681036839621,
+            37.77052704746281
+          ],
+          [
+            -122.40338613482011,
+            37.77030325772895
+          ],
+          [
+            -122.3998762365676,
+            37.7705787310405
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0042",
+        "name": "Grand Blvd Sec 42",
+        "road_type": "commercial_avenue",
+        "length_meters": 587.3,
+        "street_lighting": 0.79,
+        "pedestrian_infrastructure": 0.77,
+        "isolation_score": 0.17,
+        "traffic_density": 0.74,
+        "accessibility_score": 0.78
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40681036839621,
+            37.77052704746281
+          ],
+          [
+            -122.40693842400239,
+            37.773310874399236
+          ],
+          [
+            -122.40746478875076,
+            37.77579228954739
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0043",
+        "name": "Grand Blvd Sec 43",
+        "road_type": "commercial_avenue",
+        "length_meters": 868.6,
+        "street_lighting": 0.94,
+        "pedestrian_infrastructure": 0.82,
+        "isolation_score": 0.25,
+        "traffic_density": 0.62,
+        "accessibility_score": 0.94
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40681036839621,
+            37.77052704746281
+          ],
+          [
+            -122.40296480773478,
+            37.77324584581881
+          ],
+          [
+            -122.39930135265966,
+            37.775627164515285
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0044",
+        "name": "Market Cross 44",
+        "road_type": "secondary_street",
+        "length_meters": 540.3,
+        "street_lighting": 0.49,
+        "pedestrian_infrastructure": 0.41,
+        "isolation_score": 0.36,
+        "traffic_density": 0.35,
+        "accessibility_score": 0.67
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.3998762365676,
+            37.7705787310405
+          ],
+          [
+            -122.39664131991786,
+            37.77057270197197
+          ],
+          [
+            -122.39372668098615,
+            37.770327314937944
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0045",
+        "name": "Market Cross 45",
+        "road_type": "secondary_street",
+        "length_meters": 562.6,
+        "street_lighting": 0.67,
+        "pedestrian_infrastructure": 0.79,
+        "isolation_score": 0.59,
+        "traffic_density": 0.61,
+        "accessibility_score": 0.47
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.3998762365676,
+            37.7705787310405
+          ],
+          [
+            -122.39933146231259,
+            37.7731501586174
+          ],
+          [
+            -122.39930135265966,
+            37.775627164515285
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0046",
+        "name": "Market Cross 46",
+        "road_type": "narrow_alley",
+        "length_meters": 881.6,
+        "street_lighting": 0.7,
+        "pedestrian_infrastructure": 0.78,
+        "isolation_score": 0.46,
+        "traffic_density": 0.59,
+        "accessibility_score": 0.43
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.3998762365676,
+            37.7705787310405
+          ],
+          [
+            -122.39646986386798,
+            37.773526109629955
+          ],
+          [
+            -122.39282539039094,
+            37.7762368566164
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0047",
+        "name": "Market Cross 47",
+        "road_type": "pedestrian_walkway",
+        "length_meters": 660.7,
+        "street_lighting": 0.67,
+        "pedestrian_infrastructure": 0.45,
+        "isolation_score": 0.69,
+        "traffic_density": 0.61,
+        "accessibility_score": 0.54
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39372668098615,
+            37.770327314937944
+          ],
+          [
+            -122.39318750973611,
+            37.77302345981908
+          ],
+          [
+            -122.39282539039094,
+            37.7762368566164
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0048",
+        "name": "Pine Green Way 48",
+        "road_type": "secondary_street",
+        "length_meters": 606.8,
+        "street_lighting": 0.75,
+        "pedestrian_infrastructure": 0.63,
+        "isolation_score": 0.54,
+        "traffic_density": 0.39,
+        "accessibility_score": 0.81
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43533697925824,
+            37.77556463724105
+          ],
+          [
+            -122.43186920887187,
+            37.775251834378714
+          ],
+          [
+            -122.42842753458181,
+            37.77532766716308
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0049",
+        "name": "Pine Green Way 49",
+        "road_type": "cycle_track",
+        "length_meters": 658.8,
+        "street_lighting": 0.58,
+        "pedestrian_infrastructure": 0.8,
+        "isolation_score": 0.41,
+        "traffic_density": 0.35,
+        "accessibility_score": 0.71
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43533697925824,
+            37.77556463724105
+          ],
+          [
+            -122.43478674957942,
+            37.7787302574351
+          ],
+          [
+            -122.43463339712328,
+            37.78147382183712
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0050",
+        "name": "Pine Green Way 50",
+        "road_type": "secondary_street",
+        "length_meters": 620.5,
+        "street_lighting": 0.57,
+        "pedestrian_infrastructure": 0.72,
+        "isolation_score": 0.43,
+        "traffic_density": 0.31,
+        "accessibility_score": 0.61
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42842753458181,
+            37.77532766716308
+          ],
+          [
+            -122.42497849342871,
+            37.77533716468451
+          ],
+          [
+            -122.42135524223502,
+            37.775361602287056
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0051",
+        "name": "Pine Green Way 51",
+        "road_type": "secondary_street",
+        "length_meters": 681.2,
+        "street_lighting": 0.6,
+        "pedestrian_infrastructure": 0.82,
+        "isolation_score": 0.46,
+        "traffic_density": 0.28,
+        "accessibility_score": 0.6
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42842753458181,
+            37.77532766716308
+          ],
+          [
+            -122.42836634606269,
+            37.77823936920678
+          ],
+          [
+            -122.42819287129319,
+            37.781461443990025
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0052",
+        "name": "Central Ave Sec 52",
+        "road_type": "primary_arterial",
+        "length_meters": 633.5,
+        "street_lighting": 0.91,
+        "pedestrian_infrastructure": 0.86,
+        "isolation_score": 0.2,
+        "traffic_density": 0.84,
+        "accessibility_score": 0.72
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42135524223502,
+            37.775361602287056
+          ],
+          [
+            -122.41790203175626,
+            37.77590442099211
+          ],
+          [
+            -122.41421626851366,
+            37.77621709511082
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0053",
+        "name": "Grand Blvd Sec 53",
+        "road_type": "pedestrian_walkway",
+        "length_meters": 825.4,
+        "street_lighting": 0.83,
+        "pedestrian_infrastructure": 0.84,
+        "isolation_score": 0.17,
+        "traffic_density": 0.9,
+        "accessibility_score": 0.84
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42135524223502,
+            37.775361602287056
+          ],
+          [
+            -122.4212147791039,
+            37.77893496968022
+          ],
+          [
+            -122.42077600038424,
+            37.78278323736102
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0054",
+        "name": "Central Ave Sec 54",
+        "road_type": "primary_arterial",
+        "length_meters": 594.2,
+        "street_lighting": 0.82,
+        "pedestrian_infrastructure": 0.89,
+        "isolation_score": 0.29,
+        "traffic_density": 0.81,
+        "accessibility_score": 0.75
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41421626851366,
+            37.77621709511082
+          ],
+          [
+            -122.41055456441848,
+            37.77613944332977
+          ],
+          [
+            -122.40746478875076,
+            37.77579228954739
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0055",
+        "name": "Grand Blvd Sec 55",
+        "road_type": "pedestrian_walkway",
+        "length_meters": 653.6,
+        "street_lighting": 0.89,
+        "pedestrian_infrastructure": 0.95,
+        "isolation_score": 0.27,
+        "traffic_density": 0.69,
+        "accessibility_score": 0.79
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41421626851366,
+            37.77621709511082
+          ],
+          [
+            -122.41418449308013,
+            37.77927891844186
+          ],
+          [
+            -122.41370461719842,
+            37.78209111959004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0056",
+        "name": "Central Ave Sec 56",
+        "road_type": "primary_arterial",
+        "length_meters": 716.5,
+        "street_lighting": 0.88,
+        "pedestrian_infrastructure": 0.87,
+        "isolation_score": 0.13,
+        "traffic_density": 0.86,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40746478875076,
+            37.77579228954739
+          ],
+          [
+            -122.40341878942634,
+            37.7756913651983
+          ],
+          [
+            -122.39930135265966,
+            37.775627164515285
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0057",
+        "name": "Central Ave Sec 57",
+        "road_type": "primary_arterial",
+        "length_meters": 754.2,
+        "street_lighting": 0.97,
+        "pedestrian_infrastructure": 0.76,
+        "isolation_score": 0.27,
+        "traffic_density": 0.63,
+        "accessibility_score": 0.72
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40746478875076,
+            37.77579228954739
+          ],
+          [
+            -122.4068997238352,
+            37.77921663900373
+          ],
+          [
+            -122.40655840014152,
+            37.78254856307231
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0058",
+        "name": "Market Cross 58",
+        "road_type": "cycle_track",
+        "length_meters": 572.2,
+        "street_lighting": 0.65,
+        "pedestrian_infrastructure": 0.52,
+        "isolation_score": 0.7,
+        "traffic_density": 0.35,
+        "accessibility_score": 0.71
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39930135265966,
+            37.775627164515285
+          ],
+          [
+            -122.39581826889872,
+            37.77586023738153
+          ],
+          [
+            -122.39282539039094,
+            37.7762368566164
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0059",
+        "name": "Market Cross 59",
+        "road_type": "residential_way",
+        "length_meters": 671.4,
+        "street_lighting": 0.79,
+        "pedestrian_infrastructure": 0.8,
+        "isolation_score": 0.42,
+        "traffic_density": 0.55,
+        "accessibility_score": 0.64
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39930135265966,
+            37.775627164515285
+          ],
+          [
+            -122.40016620845952,
+            37.77867212973346
+          ],
+          [
+            -122.40074863960976,
+            37.781566476915145
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0060",
+        "name": "Market Cross 60",
+        "road_type": "primary_arterial",
+        "length_meters": 608.8,
+        "street_lighting": 0.47,
+        "pedestrian_infrastructure": 0.47,
+        "isolation_score": 0.33,
+        "traffic_density": 0.3,
+        "accessibility_score": 0.58
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39282539039094,
+            37.7762368566164
+          ],
+          [
+            -122.39322563956094,
+            37.778690374659874
+          ],
+          [
+            -122.39337161459844,
+            37.781704724876896
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0061",
+        "name": "Pine Green Way 61",
+        "road_type": "secondary_street",
+        "length_meters": 565.1,
+        "street_lighting": 0.52,
+        "pedestrian_infrastructure": 0.66,
+        "isolation_score": 0.33,
+        "traffic_density": 0.44,
+        "accessibility_score": 0.75
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43463339712328,
+            37.78147382183712
+          ],
+          [
+            -122.43157824853809,
+            37.78123649869505
+          ],
+          [
+            -122.42819287129319,
+            37.781461443990025
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0062",
+        "name": "Pine Green Way 62",
+        "road_type": "residential_way",
+        "length_meters": 673.7,
+        "street_lighting": 0.77,
+        "pedestrian_infrastructure": 0.81,
+        "isolation_score": 0.27,
+        "traffic_density": 0.25,
+        "accessibility_score": 0.68
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43463339712328,
+            37.78147382183712
+          ],
+          [
+            -122.43434916399545,
+            37.784280309388336
+          ],
+          [
+            -122.43429134445707,
+            37.787537572549745
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0063",
+        "name": "Pine Green Way 63",
+        "road_type": "secondary_street",
+        "length_meters": 667.1,
+        "street_lighting": 0.65,
+        "pedestrian_infrastructure": 0.72,
+        "isolation_score": 0.27,
+        "traffic_density": 0.21,
+        "accessibility_score": 0.71
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42819287129319,
+            37.781461443990025
+          ],
+          [
+            -122.42472963970673,
+            37.78197256141698
+          ],
+          [
+            -122.42077600038424,
+            37.78278323736102
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0064",
+        "name": "Pine Green Way 64",
+        "road_type": "cycle_track",
+        "length_meters": 792.7,
+        "street_lighting": 0.75,
+        "pedestrian_infrastructure": 0.74,
+        "isolation_score": 0.54,
+        "traffic_density": 0.5,
+        "accessibility_score": 0.77
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42819287129319,
+            37.781461443990025
+          ],
+          [
+            -122.4280909320437,
+            37.78475595510008
+          ],
+          [
+            -122.42829651539071,
+            37.78860218820236
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0065",
+        "name": "Pine Green Way 65",
+        "road_type": "secondary_street",
+        "length_meters": 973.4,
+        "street_lighting": 0.66,
+        "pedestrian_infrastructure": 0.71,
+        "isolation_score": 0.33,
+        "traffic_density": 0.5,
+        "accessibility_score": 0.71
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42819287129319,
+            37.781461443990025
+          ],
+          [
+            -122.42473492126969,
+            37.78483707916423
+          ],
+          [
+            -122.4211669889583,
+            37.788248701864475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0066",
+        "name": "Central Ave Sec 66",
+        "road_type": "primary_arterial",
+        "length_meters": 625.2,
+        "street_lighting": 0.95,
+        "pedestrian_infrastructure": 0.78,
+        "isolation_score": 0.24,
+        "traffic_density": 0.69,
+        "accessibility_score": 0.94
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42077600038424,
+            37.78278323736102
+          ],
+          [
+            -122.41735159849702,
+            37.782410074020696
+          ],
+          [
+            -122.41370461719842,
+            37.78209111959004
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0067",
+        "name": "Grand Blvd Sec 67",
+        "road_type": "commercial_avenue",
+        "length_meters": 607.6,
+        "street_lighting": 0.78,
+        "pedestrian_infrastructure": 0.89,
+        "isolation_score": 0.27,
+        "traffic_density": 0.85,
+        "accessibility_score": 0.7
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42077600038424,
+            37.78278323736102
+          ],
+          [
+            -122.42115894514644,
+            37.78546391815522
+          ],
+          [
+            -122.4211669889583,
+            37.788248701864475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0068",
+        "name": "Grand Blvd Sec 68",
+        "road_type": "commercial_avenue",
+        "length_meters": 629.0,
+        "street_lighting": 0.89,
+        "pedestrian_infrastructure": 0.89,
+        "isolation_score": 0.14,
+        "traffic_density": 0.76,
+        "accessibility_score": 0.93
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41370461719842,
+            37.78209111959004
+          ],
+          [
+            -122.40984762058046,
+            37.78209269698119
+          ],
+          [
+            -122.40655840014152,
+            37.78254856307231
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0069",
+        "name": "Grand Blvd Sec 69",
+        "road_type": "pedestrian_walkway",
+        "length_meters": 730.2,
+        "street_lighting": 0.93,
+        "pedestrian_infrastructure": 0.88,
+        "isolation_score": 0.16,
+        "traffic_density": 0.6,
+        "accessibility_score": 0.8
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41370461719842,
+            37.78209111959004
+          ],
+          [
+            -122.41411474742767,
+            37.785354066603325
+          ],
+          [
+            -122.41406583703586,
+            37.78866327614359
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0070",
+        "name": "Grand Blvd Sec 70",
+        "road_type": "commercial_avenue",
+        "length_meters": 521.3,
+        "street_lighting": 0.96,
+        "pedestrian_infrastructure": 0.77,
+        "isolation_score": 0.24,
+        "traffic_density": 0.72,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40655840014152,
+            37.78254856307231
+          ],
+          [
+            -122.40386673469455,
+            37.78203159187737
+          ],
+          [
+            -122.40074863960976,
+            37.781566476915145
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0071",
+        "name": "Central Ave Sec 71",
+        "road_type": "primary_arterial",
+        "length_meters": 568.2,
+        "street_lighting": 0.96,
+        "pedestrian_infrastructure": 0.83,
+        "isolation_score": 0.28,
+        "traffic_density": 0.86,
+        "accessibility_score": 0.77
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40655840014152,
+            37.78254856307231
+          ],
+          [
+            -122.40697725545911,
+            37.78534673470557
+          ],
+          [
+            -122.40740539598768,
+            37.7876238082664
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0072",
+        "name": "Central Ave Sec 72",
+        "road_type": "primary_arterial",
+        "length_meters": 820.6,
+        "street_lighting": 0.82,
+        "pedestrian_infrastructure": 0.77,
+        "isolation_score": 0.22,
+        "traffic_density": 0.9,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40655840014152,
+            37.78254856307231
+          ],
+          [
+            -122.40356193241894,
+            37.78534652439011
+          ],
+          [
+            -122.40037961342637,
+            37.78809818901466
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0073",
+        "name": "Market Cross 73",
+        "road_type": "narrow_alley",
+        "length_meters": 647.4,
+        "street_lighting": 0.57,
+        "pedestrian_infrastructure": 0.77,
+        "isolation_score": 0.65,
+        "traffic_density": 0.69,
+        "accessibility_score": 0.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40074863960976,
+            37.781566476915145
+          ],
+          [
+            -122.39711366204676,
+            37.781849208681614
+          ],
+          [
+            -122.39337161459844,
+            37.781704724876896
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0074",
+        "name": "Market Cross 74",
+        "road_type": "residential_way",
+        "length_meters": 725.7,
+        "street_lighting": 0.74,
+        "pedestrian_infrastructure": 0.68,
+        "isolation_score": 0.62,
+        "traffic_density": 0.45,
+        "accessibility_score": 0.67
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40074863960976,
+            37.781566476915145
+          ],
+          [
+            -122.40078837875618,
+            37.78511122762792
+          ],
+          [
+            -122.40037961342637,
+            37.78809818901466
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0075",
+        "name": "Market Cross 75",
+        "road_type": "narrow_alley",
+        "length_meters": 719.3,
+        "street_lighting": 0.55,
+        "pedestrian_infrastructure": 0.44,
+        "isolation_score": 0.64,
+        "traffic_density": 0.34,
+        "accessibility_score": 0.76
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39337161459844,
+            37.781704724876896
+          ],
+          [
+            -122.39277468019648,
+            37.784866018402475
+          ],
+          [
+            -122.39236348338623,
+            37.788135337584364
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0076",
+        "name": "Pine Green Way 76",
+        "road_type": "secondary_street",
+        "length_meters": 539.1,
+        "street_lighting": 0.73,
+        "pedestrian_infrastructure": 0.67,
+        "isolation_score": 0.44,
+        "traffic_density": 0.32,
+        "accessibility_score": 0.62
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43429134445707,
+            37.787537572549745
+          ],
+          [
+            -122.43136592428539,
+            37.78828548568656
+          ],
+          [
+            -122.42829651539071,
+            37.78860218820236
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0077",
+        "name": "Pine Green Way 77",
+        "road_type": "secondary_street",
+        "length_meters": 706.8,
+        "street_lighting": 0.69,
+        "pedestrian_infrastructure": 0.82,
+        "isolation_score": 0.4,
+        "traffic_density": 0.36,
+        "accessibility_score": 0.75
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43429134445707,
+            37.787537572549745
+          ],
+          [
+            -122.43499778821878,
+            37.79079894642363
+          ],
+          [
+            -122.43544908678535,
+            37.79383904080823
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0078",
+        "name": "Pine Green Way 78",
+        "road_type": "residential_way",
+        "length_meters": 626.8,
+        "street_lighting": 0.63,
+        "pedestrian_infrastructure": 0.62,
+        "isolation_score": 0.44,
+        "traffic_density": 0.46,
+        "accessibility_score": 0.71
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42829651539071,
+            37.78860218820236
+          ],
+          [
+            -122.42455406609541,
+            37.78815303961463
+          ],
+          [
+            -122.4211669889583,
+            37.788248701864475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0079",
+        "name": "Pine Green Way 79",
+        "road_type": "secondary_street",
+        "length_meters": 688.1,
+        "street_lighting": 0.61,
+        "pedestrian_infrastructure": 0.71,
+        "isolation_score": 0.32,
+        "traffic_density": 0.32,
+        "accessibility_score": 0.77
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42829651539071,
+            37.78860218820236
+          ],
+          [
+            -122.42807494158828,
+            37.79150416579942
+          ],
+          [
+            -122.42798475793012,
+            37.7947960601704
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0080",
+        "name": "Pine Green Way 80",
+        "road_type": "cycle_track",
+        "length_meters": 624.7,
+        "street_lighting": 0.57,
+        "pedestrian_infrastructure": 0.83,
+        "isolation_score": 0.29,
+        "traffic_density": 0.34,
+        "accessibility_score": 0.66
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4211669889583,
+            37.788248701864475
+          ],
+          [
+            -122.4174336331509,
+            37.788161627462905
+          ],
+          [
+            -122.41406583703586,
+            37.78866327614359
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0081",
+        "name": "Pine Green Way 81",
+        "road_type": "secondary_street",
+        "length_meters": 567.9,
+        "street_lighting": 0.7,
+        "pedestrian_infrastructure": 0.64,
+        "isolation_score": 0.38,
+        "traffic_density": 0.3,
+        "accessibility_score": 0.75
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.4211669889583,
+            37.788248701864475
+          ],
+          [
+            -122.42123861902373,
+            37.790647137396626
+          ],
+          [
+            -122.42172461379933,
+            37.79334545505948
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0082",
+        "name": "Market Cross 82",
+        "road_type": "commercial_avenue",
+        "length_meters": 595.6,
+        "street_lighting": 0.78,
+        "pedestrian_infrastructure": 0.44,
+        "isolation_score": 0.45,
+        "traffic_density": 0.44,
+        "accessibility_score": 0.52
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41406583703586,
+            37.78866327614359
+          ],
+          [
+            -122.41064067862222,
+            37.78843030889574
+          ],
+          [
+            -122.40740539598768,
+            37.7876238082664
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0083",
+        "name": "Market Cross 83",
+        "road_type": "residential_way",
+        "length_meters": 523.6,
+        "street_lighting": 0.4,
+        "pedestrian_infrastructure": 0.75,
+        "isolation_score": 0.61,
+        "traffic_density": 0.69,
+        "accessibility_score": 0.76
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41406583703586,
+            37.78866327614359
+          ],
+          [
+            -122.41409289064998,
+            37.79118480196384
+          ],
+          [
+            -122.41379608633328,
+            37.793375438608564
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0084",
+        "name": "Market Cross 84",
+        "road_type": "secondary_street",
+        "length_meters": 618.7,
+        "street_lighting": 0.69,
+        "pedestrian_infrastructure": 0.65,
+        "isolation_score": 0.57,
+        "traffic_density": 0.59,
+        "accessibility_score": 0.66
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40740539598768,
+            37.7876238082664
+          ],
+          [
+            -122.40380470034168,
+            37.78810304086298
+          ],
+          [
+            -122.40037961342637,
+            37.78809818901466
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0085",
+        "name": "Market Cross 85",
+        "road_type": "residential_way",
+        "length_meters": 760.0,
+        "street_lighting": 0.75,
+        "pedestrian_infrastructure": 0.41,
+        "isolation_score": 0.45,
+        "traffic_density": 0.35,
+        "accessibility_score": 0.76
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40740539598768,
+            37.7876238082664
+          ],
+          [
+            -122.40748567414175,
+            37.79085095166696
+          ],
+          [
+            -122.40712454405312,
+            37.79446732698298
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0086",
+        "name": "Market Cross 86",
+        "road_type": "narrow_alley",
+        "length_meters": 893.3,
+        "street_lighting": 0.79,
+        "pedestrian_infrastructure": 0.55,
+        "isolation_score": 0.5,
+        "traffic_density": 0.41,
+        "accessibility_score": 0.47
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40740539598768,
+            37.7876238082664
+          ],
+          [
+            -122.40389417341235,
+            37.79061066190855
+          ],
+          [
+            -122.40018940914159,
+            37.793301644329844
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0087",
+        "name": "Market Cross 87",
+        "road_type": "primary_arterial",
+        "length_meters": 703.3,
+        "street_lighting": 0.46,
+        "pedestrian_infrastructure": 0.79,
+        "isolation_score": 0.64,
+        "traffic_density": 0.59,
+        "accessibility_score": 0.79
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40037961342637,
+            37.78809818901466
+          ],
+          [
+            -122.39666319721324,
+            37.78829117248067
+          ],
+          [
+            -122.39236348338623,
+            37.788135337584364
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0088",
+        "name": "Market Cross 88",
+        "road_type": "narrow_alley",
+        "length_meters": 577.8,
+        "street_lighting": 0.46,
+        "pedestrian_infrastructure": 0.55,
+        "isolation_score": 0.6,
+        "traffic_density": 0.4,
+        "accessibility_score": 0.55
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40037961342637,
+            37.78809818901466
+          ],
+          [
+            -122.4003016251632,
+            37.79080481860548
+          ],
+          [
+            -122.40018940914159,
+            37.793301644329844
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0089",
+        "name": "Market Cross 89",
+        "road_type": "narrow_alley",
+        "length_meters": 740.9,
+        "street_lighting": 0.8,
+        "pedestrian_infrastructure": 0.62,
+        "isolation_score": 0.67,
+        "traffic_density": 0.39,
+        "accessibility_score": 0.43
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.39236348338623,
+            37.788135337584364
+          ],
+          [
+            -122.392888444655,
+            37.791554109564146
+          ],
+          [
+            -122.39295341704785,
+            37.79479379420839
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0090",
+        "name": "Pine Green Way 90",
+        "road_type": "residential_way",
+        "length_meters": 663.5,
+        "street_lighting": 0.78,
+        "pedestrian_infrastructure": 0.68,
+        "isolation_score": 0.4,
+        "traffic_density": 0.23,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.43544908678535,
+            37.79383904080823
+          ],
+          [
+            -122.43161463062643,
+            37.794289736743444
+          ],
+          [
+            -122.42798475793012,
+            37.7947960601704
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0091",
+        "name": "Pine Green Way 91",
+        "road_type": "cycle_track",
+        "length_meters": 572.4,
+        "street_lighting": 0.71,
+        "pedestrian_infrastructure": 0.74,
+        "isolation_score": 0.43,
+        "traffic_density": 0.42,
+        "accessibility_score": 0.82
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42798475793012,
+            37.7947960601704
+          ],
+          [
+            -122.42459125402529,
+            37.79414014894337
+          ],
+          [
+            -122.42172461379933,
+            37.79334545505948
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0092",
+        "name": "Pine Green Way 92",
+        "road_type": "secondary_street",
+        "length_meters": 695.6,
+        "street_lighting": 0.51,
+        "pedestrian_infrastructure": 0.69,
+        "isolation_score": 0.38,
+        "traffic_density": 0.49,
+        "accessibility_score": 0.81
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.42172461379933,
+            37.79334545505948
+          ],
+          [
+            -122.41751933233884,
+            37.79328084780912
+          ],
+          [
+            -122.41379608633328,
+            37.793375438608564
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0093",
+        "name": "Market Cross 93",
+        "road_type": "pedestrian_walkway",
+        "length_meters": 597.8,
+        "street_lighting": 0.56,
+        "pedestrian_infrastructure": 0.56,
+        "isolation_score": 0.38,
+        "traffic_density": 0.35,
+        "accessibility_score": 0.74
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.41379608633328,
+            37.793375438608564
+          ],
+          [
+            -122.41037529251287,
+            37.79401904403861
+          ],
+          [
+            -122.40712454405312,
+            37.79446732698298
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0094",
+        "name": "Market Cross 94",
+        "road_type": "narrow_alley",
+        "length_meters": 622.1,
+        "street_lighting": 0.84,
+        "pedestrian_infrastructure": 0.42,
+        "isolation_score": 0.43,
+        "traffic_density": 0.7,
+        "accessibility_score": 0.71
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40712454405312,
+            37.79446732698298
+          ],
+          [
+            -122.40362445192427,
+            37.794082376358745
+          ],
+          [
+            -122.40018940914159,
+            37.793301644329844
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "SEG-0095",
+        "name": "Market Cross 95",
+        "road_type": "narrow_alley",
+        "length_meters": 656.1,
+        "street_lighting": 0.5,
+        "pedestrian_infrastructure": 0.75,
+        "isolation_score": 0.43,
+        "traffic_density": 0.36,
+        "accessibility_score": 0.76
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.40018940914159,
+            37.793301644329844
+          ],
+          [
+            -122.39678460030653,
+            37.794262762944946
+          ],
+          [
+            -122.39295341704785,
+            37.79479379420839
+          ]
+        ]
+      }
+    }
+  ]
+}

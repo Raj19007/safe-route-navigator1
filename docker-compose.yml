@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  # PostgreSQL with PostGIS Geospatial Support
+  db:
+    image: postgis/postgis:15-3.3
+    container_name: saferoute_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: saferoute_user
+      POSTGRES_PASSWORD: saferoute_password
+      POSTGRES_DB: saferoute_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U saferoute_user -d saferoute_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # FastAPI Backend API & Risk Engine
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: saferoute_backend
+    restart: always
+    environment:
+      - DATABASE_URL=postgresql://saferoute_user:saferoute_password@db:5432/saferoute_db
+      - JWT_SECRET=super-secret-safe-route-key-2026-hackathon
+      - DECAY_LAMBDA=0.08
+      - REPORT_CLUSTER_RADIUS_METERS=150.0
+      - MAX_RISK_PENALTY_GAMMA=0.25
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+
+  # React + Vite Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: saferoute_frontend
+    restart: always
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8000/api
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
