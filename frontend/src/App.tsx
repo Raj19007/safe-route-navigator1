@@ -35,14 +35,22 @@ import {
 export const App: React.FC = () => {
   // Navigation State
   const [activeTab, setActiveTab] = useState<'navigator' | 'safety-map' | 'admin'>('navigator');
-  const [originText, setOriginText] = useState('University Main Campus');
-  const [destText, setDestText] = useState('Central Railway Station');
+  const [originText, setOriginText] = useState('🎓 DY Patil Campus Main Gate');
+  const [destText, setDestText] = useState('Akurdi Railway Station');
   const [originCoords, setOriginCoords] = useState<[number, number]>([37.7880, -122.4075]);
   const [destCoords, setDestCoords] = useState<[number, number]>([37.7650, -122.4150]);
   const [userProfile, setUserProfile] = useState<UserProfile>('WOMAN');
   const [travelMode, setTravelMode] = useState<TravelMode>('WALKING');
   const [timeHour, setTimeHour] = useState<number>(14.0); // 2:00 PM default
   const [weather, setWeather] = useState<string>('CLEAR');
+
+  // Live GPS Tracking State
+  const [userLocation, setUserLocation] = useState<[number, number] | null>(null);
+  const [userAccuracy, setUserAccuracy] = useState<number | null>(null);
+  const [isLocating, setIsLocating] = useState<boolean>(false);
+
+  // Voice Safety Assistant State
+  const [voiceEnabled, setVoiceEnabled] = useState<boolean>(false);
 
   // Route calculation state
   const [routes, setRoutes] = useState<RouteAlternative[]>([]);
@@ -64,6 +72,45 @@ export const App: React.FC = () => {
   const [demoMode, setDemoMode] = useState<boolean>(true);
   const [activeScenario, setActiveScenario] = useState<string | null>(null);
   const [demoBannerMsg, setDemoBannerMsg] = useState<string | null>(null);
+
+  // Voice synthesis helper
+  const speakSafetyAlert = useCallback((text: string) => {
+    if (!voiceEnabled || !('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.rate = 1.0;
+    utterance.pitch = 1.05;
+    window.speechSynthesis.speak(utterance);
+  }, [voiceEnabled]);
+
+  // Handle GPS "Locate Me"
+  const handleLocateMe = useCallback(() => {
+    if (!navigator.geolocation) {
+      alert('Geolocation is not supported by your browser.');
+      return;
+    }
+    setIsLocating(true);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const lat = pos.coords.latitude;
+        const lng = pos.coords.longitude;
+        const acc = pos.coords.accuracy;
+        setUserLocation([lat, lng]);
+        setUserAccuracy(acc);
+        setOriginCoords([lat, lng]);
+        setOriginText(`📍 Current GPS Location (${lat.toFixed(4)}, ${lng.toFixed(4)})`);
+        setIsLocating(false);
+        setDemoBannerMsg(`✓ GPS Locked! Accuracy within ±${Math.round(acc)}m.`);
+        speakSafetyAlert('GPS Location locked. Calculating safety scores for your route.');
+      },
+      (err) => {
+        console.warn('GPS error:', err);
+        setIsLocating(false);
+        setDemoBannerMsg('Could not fetch precise GPS. Using default campus location.');
+      },
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+    );
+  }, [speakSafetyAlert]);
 
   // Load Presets & Initial Places on startup
   useEffect(() => {
@@ -100,9 +147,12 @@ export const App: React.FC = () => {
       });
 
       setRoutes(res.routes);
-      // Auto-select recommended route or first
       const rec = res.routes.find(r => r.is_recommended) || res.routes[0];
       setSelectedRoute(rec);
+
+      if (rec) {
+        speakSafetyAlert(`${rec.title} selected. Safety risk score is ${Math.round(rec.risk_score)} out of 100.`);
+      }
 
       // Load nearby reports
       const nearbyReps = await api.getNearbyReports(originCoords[0], originCoords[1], 3000);
@@ -112,7 +162,8 @@ export const App: React.FC = () => {
     } finally {
       setIsLoading(false);
     }
-  }, [originCoords, destCoords, originText, destText, userProfile, travelMode, timeHour, weather]);
+  }, [originCoords, destCoords, originText, destText, userProfile, travelMode, timeHour, weather, speakSafetyAlert]);
+
 
   // Trigger initial calculation
   useEffect(() => {
@@ -255,6 +306,10 @@ export const App: React.FC = () => {
                 presets={presets}
                 onSelectPreset={handleSelectPreset}
                 onCalculateRoutes={() => handleCalculateRoutes()}
+                onLocateMe={handleLocateMe}
+                isLocating={isLocating}
+                voiceEnabled={voiceEnabled}
+                setVoiceEnabled={setVoiceEnabled}
                 isLoading={isLoading}
               />
 
@@ -292,9 +347,9 @@ export const App: React.FC = () => {
               </div>
 
               {/* Educational Safety Principle Notice */}
-              <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-[11px] text-slate-400 space-y-1">
-                <div className="flex items-center space-x-1.5 text-slate-300 font-bold">
-                  <Info className="w-3.5 h-3.5 text-emerald-400" />
+              <div className="p-3.5 rounded-2xl bg-slate-950/70 border border-slate-800/80 text-[11px] text-slate-400 space-y-1 shadow-sm">
+                <div className="flex items-center space-x-1.5 text-slate-200 font-bold">
+                  <Info className="w-3.5 h-3.5 text-cyan-400" />
                   <span>Uncertainty & Data Availability</span>
                 </div>
                 <p>
@@ -314,8 +369,9 @@ export const App: React.FC = () => {
                 safePlaces={safePlaces}
                 incidents={incidents}
                 reports={reports}
+                userLocation={userLocation}
+                userAccuracy={userAccuracy}
                 onMapClick={(lat, lng) => {
-                  // If clicked, allows quick update of destination
                   setDestCoords([lat, lng]);
                   setDestText(`Pinned Destination (${lat.toFixed(4)}, ${lng.toFixed(4)})`);
                 }}

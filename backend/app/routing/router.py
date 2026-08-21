@@ -14,31 +14,42 @@ SPEED_BY_MODE_KMH = {
 
 PRESET_ROUTES = [
     PresetRoute(
+        id="preset_dyp_to_station",
+        title="🎓 DY Patil (DYP) Campus → Akurdi Railway Station",
+        description="Campus student commuter corridor: Compare direct shortcut alleys vs well-lit main avenue.",
+        origin_name="DY Patil Campus Main Gate",
+        origin_coords=[37.7880, -122.4075],
+        dest_name="Akurdi Railway Station",
+        dest_coords=[37.7650, -122.4150],
+        recommended_mode="WALKING",
+        scenario_hint="Try switching to 11:30 PM Night Shift to observe dynamic lighting and crowd isolation penalties!"
+    ),
+    PresetRoute(
+        id="preset_dyp_hostel_to_library",
+        title="🛡️ DYP Girls Hostel → Central City Library",
+        description="Women Safety Priority Corridor: Evaluates street illumination, safe havens, and police proximity.",
+        origin_name="DYP Campus Girls Hostel",
+        origin_coords=[37.7895, -122.3950],
+        dest_name="Central City Library",
+        dest_coords=[37.7850, -122.4080],
+        recommended_mode="WALKING",
+        scenario_hint="Select 'Woman' profile to see high sensitivity to street lighting and incident recency decay."
+    ),
+    PresetRoute(
         id="preset_college_to_station",
-        title="College Campus → Central Railway Station",
+        title="🏫 University Main Campus → Central Railway Station",
         description="Core hackathon scenario: Compare direct alley shortcut vs main arterial vs illuminated boulevard.",
         origin_name="University Main Campus",
         origin_coords=[37.7880, -122.4075],
         dest_name="Central Railway Station",
         dest_coords=[37.7650, -122.4150],
         recommended_mode="WALKING",
-        scenario_hint="Try toggling time to 11:30 PM or submitting a Poor Lighting report on Route B to see real-time recommendation shift!"
-    ),
-    PresetRoute(
-        id="preset_tech_to_downtown",
-        title="Innovation Tech Park → Downtown Plaza",
-        description="Commuter evening path comparing rapid transit corridor vs riverside path.",
-        origin_name="Innovation Tech Park",
-        origin_coords=[37.7895, -122.3950],
-        dest_name="Downtown Market Plaza",
-        dest_coords=[37.7850, -122.4080],
-        recommended_mode="CYCLING",
-        scenario_hint="Examines bicycle lane infrastructure and high-traffic intersection safety."
+        scenario_hint="Submit a live hazard report to trigger an instant recommendation shift!"
     ),
     PresetRoute(
         id="preset_hospital_to_metro",
-        title="City General Hospital → North Metro Hub",
-        description="Accessibility & night transit corridor with emergency services proximity.",
+        title="🏥 City Hospital → North Metro Hub",
+        description="Accessibility & night transit corridor with smooth pavement and emergency proximity.",
         origin_name="City General Hospital",
         origin_coords=[37.7700, -122.4050],
         dest_name="North Metro Station",

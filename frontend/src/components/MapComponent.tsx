@@ -5,13 +5,14 @@ import {
   Polyline, 
   Marker, 
   Popup, 
+  Circle,
   useMap, 
   useMapEvents 
 } from 'react-leaflet';
 import L from 'leaflet';
 import { RouteAlternative, SafePlace, Incident, CrowdReport } from '../types';
 import { getRiskTheme } from '../utils/theme';
-import { Shield, Cross, AlertCircle, Phone, MapPin, Layers } from 'lucide-react';
+import { Shield, Cross, AlertCircle, Phone, MapPin, Layers, Flame, Navigation, Crosshair } from 'lucide-react';
 
 // Custom SVG Icons for Leaflet
 const createSvgIcon = (svgString: string, size: [number, number] = [32, 32]) => {
@@ -24,38 +25,45 @@ const createSvgIcon = (svgString: string, size: [number, number] = [32, 32]) => 
   });
 };
 
+const userGpsIcon = createSvgIcon(`
+  <div class="relative flex items-center justify-center w-8 h-8">
+    <div class="absolute w-7 h-7 rounded-full bg-cyan-400 opacity-75 gps-pulse-ring"></div>
+    <div class="relative w-4 h-4 rounded-full bg-cyan-400 border-2 border-white shadow-glow-cyan"></div>
+  </div>
+`, [32, 32]);
+
 const originIcon = createSvgIcon(`
-  <div class="w-8 h-8 rounded-full bg-emerald-500 border-2 border-white shadow-lg flex items-center justify-center text-white">
+  <div class="w-8 h-8 rounded-full bg-emerald-500 border-2 border-white shadow-glow-emerald flex items-center justify-center text-white font-bold">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
   </div>
 `);
 
 const destIcon = createSvgIcon(`
-  <div class="w-8 h-8 rounded-full bg-rose-600 border-2 border-white shadow-lg flex items-center justify-center text-white">
+  <div class="w-8 h-8 rounded-full bg-rose-600 border-2 border-white shadow-glow-red flex items-center justify-center text-white">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3z"/></svg>
   </div>
 `);
 
 const policeIcon = createSvgIcon(`
-  <div class="w-7 h-7 rounded-lg bg-blue-600 border border-blue-300 shadow-md flex items-center justify-center text-white">
+  <div class="w-7 h-7 rounded-xl bg-blue-600 border border-blue-400 shadow-md flex items-center justify-center text-white">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
   </div>
 `, [28, 28]);
 
 const hospitalIcon = createSvgIcon(`
-  <div class="w-7 h-7 rounded-lg bg-rose-600 border border-rose-300 shadow-md flex items-center justify-center text-white font-bold text-xs">
+  <div class="w-7 h-7 rounded-xl bg-rose-600 border border-rose-400 shadow-md flex items-center justify-center text-white font-bold text-xs">
     +
   </div>
 `, [28, 28]);
 
 const pharmacyIcon = createSvgIcon(`
-  <div class="w-7 h-7 rounded-lg bg-teal-600 border border-teal-300 shadow-md flex items-center justify-center text-white font-bold text-xs">
+  <div class="w-7 h-7 rounded-xl bg-teal-600 border border-teal-400 shadow-md flex items-center justify-center text-white font-bold text-xs">
     Rx
   </div>
 `, [28, 28]);
 
 const reportHazardIcon = createSvgIcon(`
-  <div class="w-7 h-7 rounded-full bg-amber-500/90 border-2 border-white shadow-lg flex items-center justify-center text-slate-950 font-black text-xs">
+  <div class="w-7 h-7 rounded-full bg-amber-500 border-2 border-white shadow-glow-amber flex items-center justify-center text-slate-950 font-black text-xs hazard-pulse">
     !
   </div>
 `, [28, 28]);
@@ -99,6 +107,8 @@ interface MapComponentProps {
   safePlaces: SafePlace[];
   incidents: Incident[];
   reports: CrowdReport[];
+  userLocation?: [number, number] | null;
+  userAccuracy?: number | null;
   onMapClick?: (lat: number, lng: number) => void;
   showSafePlaces?: boolean;
   showHazards?: boolean;
@@ -112,6 +122,8 @@ export const MapComponent: React.FC<MapComponentProps> = ({
   destCoords,
   safePlaces = [],
   reports = [],
+  userLocation,
+  userAccuracy,
   onMapClick,
   showSafePlaces = true,
   showHazards = true,
@@ -119,29 +131,76 @@ export const MapComponent: React.FC<MapComponentProps> = ({
   const [layersOpen, setLayersOpen] = useState(false);
   const [filterSafePlaces, setFilterSafePlaces] = useState(showSafePlaces);
   const [filterHazards, setFilterHazards] = useState(showHazards);
+  const [showRiskHeatmap, setShowRiskHeatmap] = useState(true);
 
   // Compute map bounds covering origin, destination, and routes
   const allPoints: [number, number][] = [originCoords, destCoords];
+  if (userLocation) allPoints.push(userLocation);
   if (selectedRoute && selectedRoute.coordinates) {
     selectedRoute.coordinates.forEach(c => allPoints.push([c[1], c[0]]));
   }
 
   return (
-    <div className="relative w-full h-full min-h-[400px]">
+    <div className="relative w-full h-full min-h-[420px]">
       <MapContainer
-        center={originCoords}
+        center={userLocation || originCoords}
         zoom={14}
         scrollWheelZoom={true}
         className="w-full h-full z-10"
       >
-        <MapController center={originCoords} bounds={allPoints.length > 2 ? allPoints : undefined} />
+        <MapController center={userLocation || originCoords} bounds={allPoints.length > 2 ? allPoints : undefined} />
         <MapClickHandler onMapClick={onMapClick} />
 
-        {/* Dark Matter Sleek Map Tile Layer */}
+        {/* Dark Sleek Map Tile Layer */}
         <TileLayer
           attribution='&copy; <a href="https://carto.com/">CARTO</a>'
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
         />
+
+        {/* Live GPS User Location Marker & Translucent Accuracy Circle */}
+        {userLocation && (
+          <>
+            <Circle
+              center={userLocation}
+              radius={userAccuracy || 120}
+              pathOptions={{
+                color: '#06B6D4',
+                fillColor: '#06B6D4',
+                fillOpacity: 0.15,
+                weight: 1.5,
+              }}
+            />
+            <Marker position={userLocation} icon={userGpsIcon}>
+              <Popup>
+                <div className="p-1 text-xs">
+                  <strong className="text-cyan-400 font-bold block flex items-center gap-1">
+                    <Crosshair className="w-3 h-3 text-cyan-400" /> You Are Here
+                  </strong>
+                  <span className="text-slate-300">Live GPS Location Locked</span>
+                </div>
+              </Popup>
+            </Marker>
+          </>
+        )}
+
+        {/* Risk Heatmap Density Overlay */}
+        {showRiskHeatmap && reports.map((rep, idx) => {
+          const color = rep.severity === 'CRITICAL' ? '#EF4444' : rep.severity === 'HIGH' ? '#F97316' : '#F59E0B';
+          return (
+            <Circle
+              key={`heatmap-${rep.id || idx}`}
+              center={[rep.latitude, rep.longitude]}
+              radius={180}
+              pathOptions={{
+                color: color,
+                fillColor: color,
+                fillOpacity: 0.18,
+                weight: 0,
+              }}
+            />
+          );
+        })}
+
 
         {/* Unselected Routes Polylines (Subtle background paths) */}
         {routes
