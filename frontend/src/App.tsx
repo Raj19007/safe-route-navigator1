@@ -33,12 +33,12 @@ import {
 } from 'lucide-react';
 
 export const App: React.FC = () => {
-  // Navigation State
+  // Navigation State - Centered on DY Patil Campus, Akurdi, Pune, India
   const [activeTab, setActiveTab] = useState<'navigator' | 'safety-map' | 'admin'>('navigator');
-  const [originText, setOriginText] = useState('🎓 DY Patil Campus Main Gate');
+  const [originText, setOriginText] = useState('🎓 DY Patil Campus Main Gate, Akurdi');
   const [destText, setDestText] = useState('Akurdi Railway Station');
-  const [originCoords, setOriginCoords] = useState<[number, number]>([37.7880, -122.4075]);
-  const [destCoords, setDestCoords] = useState<[number, number]>([37.7650, -122.4150]);
+  const [originCoords, setOriginCoords] = useState<[number, number]>([18.6465, 73.7597]);
+  const [destCoords, setDestCoords] = useState<[number, number]>([18.6508, 73.7705]);
   const [userProfile, setUserProfile] = useState<UserProfile>('WOMAN');
   const [travelMode, setTravelMode] = useState<TravelMode>('WALKING');
   const [timeHour, setTimeHour] = useState<number>(14.0); // 2:00 PM default
@@ -83,6 +83,20 @@ export const App: React.FC = () => {
     window.speechSynthesis.speak(utterance);
   }, [voiceEnabled]);
 
+  // Geocoding helper for any custom Indian or global place search
+  const geocodeLocation = async (query: string): Promise<[number, number] | null> => {
+    try {
+      const res = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1`);
+      const data = await res.json();
+      if (data && data.length > 0) {
+        return [parseFloat(data[0].lat), parseFloat(data[0].lon)];
+      }
+    } catch (e) {
+      console.warn("Geocoding lookup error:", e);
+    }
+    return null;
+  };
+
   // Handle GPS "Locate Me"
   const handleLocateMe = useCallback(() => {
     if (!navigator.geolocation) {
@@ -100,17 +114,33 @@ export const App: React.FC = () => {
         setOriginCoords([lat, lng]);
         setOriginText(`📍 Current GPS Location (${lat.toFixed(4)}, ${lng.toFixed(4)})`);
         setIsLocating(false);
-        setDemoBannerMsg(`✓ GPS Locked! Accuracy within ±${Math.round(acc)}m.`);
-        speakSafetyAlert('GPS Location locked. Calculating safety scores for your route.');
+        setDemoBannerMsg(`✓ GPS Locked in India/Local! Accuracy ±${Math.round(acc)}m.`);
+        speakSafetyAlert('GPS Location locked. Calculating safe road paths from your live location.');
       },
       (err) => {
         console.warn('GPS error:', err);
         setIsLocating(false);
-        setDemoBannerMsg('Could not fetch precise GPS. Using default campus location.');
+        setDemoBannerMsg('Could not fetch precise GPS. Defaulted to DY Patil Campus, Pune.');
       },
       { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
     );
   }, [speakSafetyAlert]);
+
+  // Auto-request GPS on startup if available
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          const lat = pos.coords.latitude;
+          const lng = pos.coords.longitude;
+          setUserLocation([lat, lng]);
+          setUserAccuracy(pos.coords.accuracy);
+        },
+        () => {},
+        { enableHighAccuracy: false, timeout: 5000 }
+      );
+    }
+  }, []);
 
   // Load Presets & Initial Places on startup
   useEffect(() => {
@@ -129,15 +159,35 @@ export const App: React.FC = () => {
     initData();
   }, []);
 
-  // Main Route Calculation
+  // Main Route Calculation with automatic Geocoding
   const handleCalculateRoutes = useCallback(async (customHour?: number, customProfile?: UserProfile, customMode?: TravelMode) => {
     setIsLoading(true);
     try {
+      let activeOrigin = originCoords;
+      let activeDest = destCoords;
+
+      // If user typed a new location query without coordinates, geocode it
+      if (!originText.includes('(') && !originText.includes('DY Patil')) {
+        const geoOrigin = await geocodeLocation(originText);
+        if (geoOrigin) {
+          activeOrigin = geoOrigin;
+          setOriginCoords(geoOrigin);
+        }
+      }
+
+      if (!destText.includes('(') && !destText.includes('Akurdi')) {
+        const geoDest = await geocodeLocation(destText);
+        if (geoDest) {
+          activeDest = geoDest;
+          setDestCoords(geoDest);
+        }
+      }
+
       const res = await api.calculateRoutes({
-        origin_lat: originCoords[0],
-        origin_lng: originCoords[1],
-        dest_lat: destCoords[0],
-        dest_lng: destCoords[1],
+        origin_lat: activeOrigin[0],
+        origin_lng: activeOrigin[1],
+        dest_lat: activeDest[0],
+        dest_lng: activeDest[1],
         origin_name: originText,
         dest_name: destText,
         user_profile: customProfile || userProfile,
@@ -155,7 +205,7 @@ export const App: React.FC = () => {
       }
 
       // Load nearby reports
-      const nearbyReps = await api.getNearbyReports(originCoords[0], originCoords[1], 3000);
+      const nearbyReps = await api.getNearbyReports(activeOrigin[0], activeOrigin[1], 3000);
       setReports(nearbyReps);
     } catch (err) {
       console.error('Error calculating routes:', err);
@@ -163,6 +213,7 @@ export const App: React.FC = () => {
       setIsLoading(false);
     }
   }, [originCoords, destCoords, originText, destText, userProfile, travelMode, timeHour, weather, speakSafetyAlert]);
+
 
 
   // Trigger initial calculation

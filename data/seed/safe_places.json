@@ -1,5 +1,60 @@
 [
   {
+    "id": "SAF-IND-001",
+    "name": "DY Patil Campus Security & Rapid SOS Post",
+    "category": "police",
+    "latitude": 18.6468,
+    "longitude": 73.7595,
+    "address": "Main Entrance Gate, DY Patil Educational Complex, Akurdi, Pune",
+    "phone": "+91 20 2765 3054",
+    "is_24_7": true,
+    "emergency_types": ["SOS", "POLICE", "CAMPUS_SECURITY"]
+  },
+  {
+    "id": "SAF-IND-002",
+    "name": "Nigdi Police Station & Rapid Response Chowky",
+    "category": "police",
+    "latitude": 18.6520,
+    "longitude": 73.7710,
+    "address": "Near Akurdi Railway Station Road, Nigdi, Pimpri-Chinchwad",
+    "phone": "112 / +91 20 2767 1100",
+    "is_24_7": true,
+    "emergency_types": ["SOS", "POLICE", "WOMEN_CELL"]
+  },
+  {
+    "id": "SAF-IND-003",
+    "name": "Dr. D. Y. Patil Medical College Hospital & Trauma Centre",
+    "category": "hospital",
+    "latitude": 18.6235,
+    "longitude": 73.8155,
+    "address": "Sant Tukaram Nagar, Pimpri, Pune 411018",
+    "phone": "+91 20 2780 5100",
+    "is_24_7": true,
+    "emergency_types": ["EMERGENCY", "TRAUMA", "AMBULANCE"]
+  },
+  {
+    "id": "SAF-IND-004",
+    "name": "Lokmanya Trauma & Multi-Speciality Hospital",
+    "category": "hospital",
+    "latitude": 18.6480,
+    "longitude": 73.7730,
+    "address": "Old Mumbai-Pune Highway, Chinchwad, Pune",
+    "phone": "108 / +91 20 6634 0000",
+    "is_24_7": true,
+    "emergency_types": ["TRAUMA", "AMBULANCE"]
+  },
+  {
+    "id": "SAF-IND-005",
+    "name": "24/7 MedPlus All-Night Pharmacy & First-Aid",
+    "category": "pharmacy",
+    "latitude": 18.6450,
+    "longitude": 73.7620,
+    "address": "Pradhikaran, Near Akurdi Station Road, Pune",
+    "phone": "+91 20 2765 0101",
+    "is_24_7": true,
+    "emergency_types": ["FIRST_AID", "PHARMACY", "SAFE_HAVEN"]
+  },
+  {
     "id": "SAF-0001",
     "name": "Central Police Precinct HQ",
     "category": "police",
