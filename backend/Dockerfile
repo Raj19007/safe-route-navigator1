@@ -1,5 +1,13 @@
-FROM python:3.12-slim
+# Stage 1: Build React Frontend UI
+FROM node:20-alpine AS frontend-builder
+WORKDIR /frontend
+COPY frontend/package*.json ./
+RUN npm install
+COPY frontend/ ./
+RUN npm run build
 
+# Stage 2: Python Backend with bundled Frontend
+FROM python:3.12-slim
 WORKDIR /app
 
 # Install system dependencies
@@ -14,10 +22,11 @@ RUN pip install --no-cache-dir -r /app/backend/requirements.txt
 
 COPY backend /app/backend
 COPY data /app/data
+# Copy built React frontend to static folder
+COPY --from=frontend-builder /frontend/dist /app/backend/static
 
 ENV PYTHONPATH=/app/backend
 WORKDIR /app/backend
 
 EXPOSE 8000
-
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
