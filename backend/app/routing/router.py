@@ -15,48 +15,48 @@ SPEED_BY_MODE_KMH = {
 
 PRESET_ROUTES = [
     PresetRoute(
-        id="preset_dyp_to_station",
-        title="🎓 DY Patil (DYP) Campus → Akurdi Railway Station",
-        description="Campus student commuter corridor: Compare direct shortcut alleys vs well-lit main avenue.",
-        origin_name="DY Patil Campus Main Gate, Akurdi",
-        origin_coords=[18.6465, 73.7597],
-        dest_name="Akurdi Railway Station",
-        dest_coords=[18.6508, 73.7705],
-        recommended_mode="WALKING",
-        scenario_hint="Try switching to 11:30 PM Night Shift to observe dynamic lighting and crowd isolation penalties!"
+        id="preset_dyp_talsande_to_kolhapur_station",
+        title="🎓 DY Patil (Talsande) Campus → Kolhapur Railway Station",
+        description="Major student & faculty inter-city commuter corridor connecting Talsande campus to CSMT Kolhapur Railway Station.",
+        origin_name="D. Y. Patil Technical Campus, Talsande, Kolhapur",
+        origin_coords=[16.8524, 74.2980],
+        dest_name="Chhatrapati Shahu Maharaj Terminus (Kolhapur Railway Station)",
+        dest_coords=[16.7025, 74.2415],
+        recommended_mode="DRIVING",
+        scenario_hint="Compares direct highway route via NH-48 / Warnanagar road vs well-illuminated main city arterial corridors."
     ),
     PresetRoute(
-        id="preset_dyp_hostel_to_library",
-        title="🛡️ DYP Girls Hostel → Central City Library",
-        description="Women Safety Priority Corridor: Evaluates street illumination, safe havens, and police proximity.",
-        origin_name="DYP Campus Girls Hostel",
-        origin_coords=[18.6472, 73.7580],
-        dest_name="Central City Library, Nigdi",
-        dest_coords=[18.6420, 73.7650],
-        recommended_mode="WALKING",
-        scenario_hint="Select 'Woman' profile to see high sensitivity to street lighting and incident recency decay."
+        id="preset_dyp_hostel_to_cbs",
+        title="🛡️ DY Patil Talsande Hostel → Central Bus Stand (CBS) Kolhapur",
+        description="Women Safety Priority Corridor: Evaluates highway lighting, police patrol points, and transit hubs.",
+        origin_name="DY Patil Campus Hostel, Talsande",
+        origin_coords=[16.8530, 74.2970],
+        dest_name="Central Bus Stand (CBS), Kolhapur",
+        dest_coords=[16.7035, 74.2430],
+        recommended_mode="DRIVING",
+        scenario_hint="Select 'Woman' profile to observe emergency havens and lighting sensitivity penalties."
     ),
     PresetRoute(
-        id="preset_pune_univ_to_station",
-        title="🏫 Pune University → Pune Central Station",
-        description="City arterial transit route comparing main illuminated boulevard vs dense urban alleys.",
-        origin_name="Savitribai Phule University Main Campus",
-        origin_coords=[18.5529, 73.8260],
-        dest_name="Pune Central Railway Station",
-        dest_coords=[18.5284, 73.8744],
+        id="preset_cpr_to_mahalaxmi",
+        title="🏥 CPR Hospital → Mahalaxmi Mandir Kolhapur",
+        description="Heritage & emergency corridor with smooth pedestrian walkways and 24/7 hospital proximity.",
+        origin_name="CPR Government Hospital, Kolhapur",
+        origin_coords=[16.6980, 74.2285],
+        dest_name="Mahalaxmi Temple, Kolhapur",
+        dest_coords=[16.6940, 74.2240],
         recommended_mode="WALKING",
-        scenario_hint="Submit a live hazard report to trigger an instant recommendation shift!"
+        scenario_hint="Short walking transit with high foot traffic and historical safety ratings."
     ),
     PresetRoute(
-        id="preset_dyp_hospital_to_metro",
-        title="🏥 D.Y. Patil Hospital → Pimpri Metro Station",
-        description="Accessibility & night transit corridor with smooth pavement and emergency trauma center proximity.",
-        origin_name="Dr. D. Y. Patil Medical College & Hospital",
-        origin_coords=[18.6235, 73.8155],
-        dest_name="Pimpri Metro Station Hub",
-        dest_coords=[18.6280, 73.8050],
-        recommended_mode="ACCESSIBILITY",
-        scenario_hint="Emphasizes wheelchair ramps, curb cuts, and emergency call box proximity."
+        id="preset_univ_to_cyber",
+        title="🏫 Shivaji University → Cyber Chowk Hub, Kolhapur",
+        description="Student university corridor comparing cycle paths vs main road transit.",
+        origin_name="Shivaji University Main Gate, Kolhapur",
+        origin_coords=[16.6775, 74.2540],
+        dest_name="Cyber Chowk Hub, Kolhapur",
+        dest_coords=[16.6850, 74.2480],
+        recommended_mode="CYCLING",
+        scenario_hint="Evaluates speed, cycle infrastructure, and traffic density."
     )
 ]
 

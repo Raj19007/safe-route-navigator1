@@ -1,5 +1,60 @@
 [
   {
+    "id": "SAF-KOL-001",
+    "name": "DY Patil Technical Campus Security Post, Talsande",
+    "category": "police",
+    "latitude": 16.8526,
+    "longitude": 74.2982,
+    "address": "Main Gate, DY Patil Group Technical Campus, Talsande, Kolhapur 416112",
+    "phone": "+91 230 247 9293",
+    "is_24_7": true,
+    "emergency_types": ["SOS", "CAMPUS_SECURITY", "FIRST_AID"]
+  },
+  {
+    "id": "SAF-KOL-002",
+    "name": "Shahupuri Police Station & Station Chowky, Kolhapur",
+    "category": "police",
+    "latitude": 16.7032,
+    "longitude": 74.2422,
+    "address": "Near Kolhapur Railway Station, Shahupuri, Kolhapur 416001",
+    "phone": "112 / +91 231 265 1475",
+    "is_24_7": true,
+    "emergency_types": ["SOS", "POLICE", "WOMEN_SAFETY"]
+  },
+  {
+    "id": "SAF-KOL-003",
+    "name": "Chhatrapati Pramila Raje (CPR) Government Hospital & Trauma Centre",
+    "category": "hospital",
+    "latitude": 16.6980,
+    "longitude": 74.2285,
+    "address": "Bhavani Mandap Road, Mangalwar Peth, Kolhapur 416012",
+    "phone": "108 / +91 231 264 1251",
+    "is_24_7": true,
+    "emergency_types": ["TRAUMA", "AMBULANCE", "EMERGENCY"]
+  },
+  {
+    "id": "SAF-KOL-004",
+    "name": "Aster Aadhar Multi-Speciality Hospital, Kolhapur",
+    "category": "hospital",
+    "latitude": 16.6850,
+    "longitude": 74.2460,
+    "address": "Near R. S. No. 628, B Ward, Shastri Nagar, Kolhapur 416012",
+    "phone": "+91 231 662 2555",
+    "is_24_7": true,
+    "emergency_types": ["TRAUMA", "EMERGENCY"]
+  },
+  {
+    "id": "SAF-KOL-005",
+    "name": "24/7 Apollo Pharmacy & Emergency Care, Station Road Kolhapur",
+    "category": "pharmacy",
+    "latitude": 16.7015,
+    "longitude": 74.2405,
+    "address": "Opposite Railway Station, Station Road, Kolhapur",
+    "phone": "+91 231 265 0999",
+    "is_24_7": true,
+    "emergency_types": ["FIRST_AID", "PHARMACY", "SAFE_HAVEN"]
+  },
+  {
     "id": "SAF-IND-001",
     "name": "DY Patil Campus Security & Rapid SOS Post",
     "category": "police",

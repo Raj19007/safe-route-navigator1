@@ -123,8 +123,8 @@ export const SafetyMapView: React.FC = () => {
           routes={[]}
           selectedRoute={null}
           onSelectRoute={() => {}}
-          originCoords={[18.6465, 73.7597]}
-          destCoords={[18.6508, 73.7705]}
+          originCoords={[16.8524, 74.2980]}
+          destCoords={[16.7025, 74.2415]}
           safePlaces={safePlaces}
           incidents={incidents}
           reports={reports}

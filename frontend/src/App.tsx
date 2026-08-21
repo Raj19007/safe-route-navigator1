@@ -33,14 +33,14 @@ import {
 } from 'lucide-react';
 
 export const App: React.FC = () => {
-  // Navigation State - Centered on DY Patil Campus, Akurdi, Pune, India
+  // Navigation State - Centered on DY Patil Technical Campus, Talsande, Kolhapur
   const [activeTab, setActiveTab] = useState<'navigator' | 'safety-map' | 'admin'>('navigator');
-  const [originText, setOriginText] = useState('🎓 DY Patil Campus Main Gate, Akurdi');
-  const [destText, setDestText] = useState('Akurdi Railway Station');
-  const [originCoords, setOriginCoords] = useState<[number, number]>([18.6465, 73.7597]);
-  const [destCoords, setDestCoords] = useState<[number, number]>([18.6508, 73.7705]);
+  const [originText, setOriginText] = useState('🎓 D. Y. Patil Technical Campus, Talsande, Kolhapur');
+  const [destText, setDestText] = useState('Chhatrapati Shahu Maharaj Terminus (Kolhapur Railway Station)');
+  const [originCoords, setOriginCoords] = useState<[number, number]>([16.8524, 74.2980]);
+  const [destCoords, setDestCoords] = useState<[number, number]>([16.7025, 74.2415]);
   const [userProfile, setUserProfile] = useState<UserProfile>('WOMAN');
-  const [travelMode, setTravelMode] = useState<TravelMode>('WALKING');
+  const [travelMode, setTravelMode] = useState<TravelMode>('DRIVING');
   const [timeHour, setTimeHour] = useState<number>(14.0); // 2:00 PM default
   const [weather, setWeather] = useState<string>('CLEAR');
 
