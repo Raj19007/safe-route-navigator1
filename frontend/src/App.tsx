@@ -10,6 +10,7 @@ import { DemoScenarioBar } from './components/DemoScenarioBar';
 import { AdminDashboard } from './components/AdminDashboard';
 import { SafetyMapView } from './components/SafetyMapView';
 import { AuthModal } from './components/AuthModal';
+import { LocationSearchInput } from './components/LocationSearchInput';
 import { api } from './services/api';
 import { 
   RouteAlternative, 
@@ -344,105 +345,161 @@ export const App: React.FC = () => {
       )}
 
       {/* Main Content Area */}
-      <main className="flex-1 relative overflow-hidden flex">
+      <main className="flex-1 relative overflow-hidden w-full h-full">
         {activeTab === 'admin' ? (
           <AdminDashboard />
         ) : activeTab === 'safety-map' ? (
           <SafetyMapView />
         ) : (
-          /* Navigator Dual-Pane View */
-          <div className="w-full h-full flex flex-col lg:flex-row overflow-hidden relative">
-            {/* Left Sidebar: Controls & Route Comparison Cards */}
-            <div className="w-full lg:w-[440px] xl:w-[480px] h-full overflow-y-auto p-3 sm:p-4 md:p-5 space-y-4 border-r border-slate-800/80 shrink-0 z-20 glass-panel lg:bg-slate-950/80">
-              {/* Route Input Panel with Autocomplete Search */}
-              <NavigationControlPanel
-                originText={originText}
-                setOriginText={setOriginText}
-                destText={destText}
-                setDestText={setDestText}
-                originCoords={originCoords}
-                destCoords={destCoords}
-                onSelectOriginLocation={handleSelectOriginLocation}
-                onSelectDestLocation={handleSelectDestLocation}
-                userProfile={userProfile}
-                setUserProfile={setUserProfile}
-                travelMode={travelMode}
-                setTravelMode={setTravelMode}
-                timeHour={timeHour}
-                setTimeHour={setTimeHour}
-                weather={weather}
-                setWeather={setWeather}
-                presets={presets}
-                onSelectPreset={handleSelectPreset}
-                onCalculateRoutes={() => handleCalculateRoutes()}
-                onLocateMe={handleLocateMe}
-                isLocating={isLocating}
-                voiceEnabled={voiceEnabled}
-                setVoiceEnabled={setVoiceEnabled}
-                isLoading={isLoading}
-              />
+          /* Full-Screen Pure Map Layout with Floating Cards */
+          <div className="w-full h-full relative overflow-hidden">
+            {/* 100% Full Viewport Map */}
+            <MapComponent
+              routes={routes}
+              selectedRoute={selectedRoute}
+              onSelectRoute={(r) => setSelectedRoute(r)}
+              originCoords={originCoords}
+              destCoords={destCoords}
+              safePlaces={safePlaces}
+              incidents={incidents}
+              reports={reports}
+              userLocation={userLocation}
+              userAccuracy={userAccuracy}
+              onMapClick={handleMapClick}
+            />
 
-              {/* Route Comparison Cards */}
-              <div className="space-y-3 pt-2">
-                <div className="flex items-center justify-between px-1">
-                  <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
-                    <Navigation className="w-3.5 h-3.5 text-emerald-400" />
-                    Calculated Safe Alternatives ({routes.length})
-                  </h3>
-                  <span className="text-[11px] text-slate-400">
-                    Mode: {travelMode}
-                  </span>
+            {/* Floating Top Search Card (Glassmorphism) */}
+            <div className="absolute top-3 left-3 right-3 sm:right-auto sm:w-[420px] z-30 transition-all">
+              <div className="glass-panel p-4 rounded-3xl border border-slate-700/70 shadow-2xl space-y-3">
+                {/* Search Inputs */}
+                <div className="space-y-2.5">
+                  <LocationSearchInput
+                    label="Starting Point"
+                    placeholder="Search start location or tap 'Use My GPS'..."
+                    value={originText}
+                    onChangeText={setOriginText}
+                    onSelectLocation={handleSelectOriginLocation}
+                    onLocateMe={handleLocateMe}
+                    isLocating={isLocating}
+                    type="origin"
+                  />
+
+                  <LocationSearchInput
+                    label="Destination Point"
+                    placeholder="Search target location or click map..."
+                    value={destText}
+                    onChangeText={setDestText}
+                    onSelectLocation={handleSelectDestLocation}
+                    type="destination"
+                  />
                 </div>
 
-                {isLoading && routes.length === 0 ? (
-                  <div className="p-8 text-center text-slate-400 space-y-2">
-                    <div className="w-6 h-6 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin mx-auto" />
-                    <p className="text-xs font-semibold">Evaluating multi-factor safety segments...</p>
+                {/* Travel Mode Selector & Calculate CTA */}
+                <div className="flex items-center justify-between gap-2 pt-1 border-t border-slate-800/80">
+                  <div className="flex items-center space-x-1 bg-slate-950/80 p-1 rounded-2xl border border-slate-800">
+                    {(['WALKING', 'CYCLING', 'DRIVING', 'ACCESSIBILITY'] as TravelMode[]).map((mode) => (
+                      <button
+                        key={mode}
+                        type="button"
+                        onClick={() => {
+                          setTravelMode(mode);
+                          handleCalculateRoutes(undefined, undefined, mode);
+                        }}
+                        className={`px-2.5 py-1 rounded-xl text-[10px] font-black uppercase transition-all ${
+                          travelMode === mode
+                            ? 'bg-emerald-500 text-slate-950 shadow-glow-emerald'
+                            : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900'
+                        }`}
+                      >
+                        {mode === 'WALKING' ? 'Walk' : mode === 'CYCLING' ? 'Cycle' : mode === 'DRIVING' ? 'Drive' : 'Access'}
+                      </button>
+                    ))}
                   </div>
-                ) : (
-                  routes.map((route) => (
-                    <RouteCard
-                      key={route.route_id}
-                      route={route}
-                      isSelected={selectedRoute?.route_id === route.route_id}
-                      onSelect={() => setSelectedRoute(route)}
-                      onOpenExplainer={() => {
-                        setSelectedRoute(route);
-                        setIsExplainerOpen(true);
-                      }}
-                    />
-                  ))
-                )}
-              </div>
 
-              {/* Educational Safety Principle Notice */}
-              <div className="p-3.5 rounded-2xl bg-slate-950/70 border border-slate-800/80 text-[11px] text-slate-400 space-y-1 shadow-sm">
-                <div className="flex items-center space-x-1.5 text-slate-200 font-bold">
-                  <Info className="w-3.5 h-3.5 text-cyan-400" />
-                  <span>Uncertainty & Data Availability</span>
+                  <button
+                    type="button"
+                    onClick={() => handleCalculateRoutes()}
+                    disabled={isLoading}
+                    className="px-4 py-2 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-400 text-slate-950 font-black text-xs uppercase tracking-wider shadow-glow-emerald hover:opacity-95 transition-all flex items-center gap-1.5 shrink-0"
+                  >
+                    <Navigation className={`w-3.5 h-3.5 ${isLoading ? 'animate-spin' : ''}`} />
+                    <span>{isLoading ? 'Routing...' : 'Find Route'}</span>
+                  </button>
                 </div>
-                <p>
-                  Risk scores account for data confidence. If an area lacks historical records or recent reports, the confidence score drops rather than automatically rating the road as safe.
-                </p>
               </div>
             </div>
 
-            {/* Right Map Canvas */}
-            <div className="flex-1 h-[50vh] lg:h-full relative">
-              <MapComponent
-                routes={routes}
-                selectedRoute={selectedRoute}
-                onSelectRoute={(r) => setSelectedRoute(r)}
-                originCoords={originCoords}
-                destCoords={destCoords}
-                safePlaces={safePlaces}
-                incidents={incidents}
-                reports={reports}
-                userLocation={userLocation}
-                userAccuracy={userAccuracy}
-                onMapClick={handleMapClick}
-              />
-            </div>
+            {/* Floating Bottom Selected Route Pill / Card */}
+            {selectedRoute && (
+              <div className="absolute bottom-4 left-3 right-3 sm:left-auto sm:right-4 sm:w-[440px] z-30 animate-in fade-in slide-in-from-bottom-4">
+                <div className="glass-panel p-4 rounded-3xl border border-slate-700/80 shadow-2xl space-y-3">
+                  {/* Route Alternatives Switcher */}
+                  <div className="flex items-center justify-between pb-2 border-b border-slate-800/80">
+                    <div className="flex items-center space-x-1.5">
+                      {routes.map((r) => (
+                        <button
+                          key={r.route_id}
+                          onClick={() => setSelectedRoute(r)}
+                          className={`px-3 py-1 rounded-xl text-[10px] font-black uppercase transition-all border ${
+                            selectedRoute.route_id === r.route_id
+                              ? 'bg-gradient-to-r from-emerald-600 to-teal-500 text-white border-emerald-400/50 shadow-glow-emerald'
+                              : 'bg-slate-950/80 text-slate-400 border-slate-800 hover:text-white'
+                          }`}
+                        >
+                          {r.route_type}
+                        </button>
+                      ))}
+                    </div>
+
+                    <button
+                      onClick={() => setIsExplainerOpen(true)}
+                      className="text-[10px] text-cyan-400 hover:text-cyan-300 font-bold flex items-center gap-1 hover:underline"
+                    >
+                      <Info className="w-3.5 h-3.5" />
+                      <span>AI Explainer</span>
+                    </button>
+                  </div>
+
+                  {/* Selected Route Info */}
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h4 className="font-black text-sm text-slate-100 flex items-center gap-1.5">
+                        <span
+                          className="w-2.5 h-2.5 rounded-full"
+                          style={{ backgroundColor: selectedRoute.risk_color || '#10B981' }}
+                        />
+                        {selectedRoute.title}
+                      </h4>
+                      <p className="text-xs text-slate-400 font-medium mt-0.5">
+                        {selectedRoute.duration_min_str} • {selectedRoute.distance_km_str}
+                      </p>
+                    </div>
+
+                    <div
+                      className="px-3 py-1.5 rounded-2xl text-right font-black text-xs flex flex-col items-end border"
+                      style={{
+                        backgroundColor: `${selectedRoute.risk_color}18`,
+                        borderColor: `${selectedRoute.risk_color}40`,
+                        color: selectedRoute.risk_color || '#10B981'
+                      }}
+                    >
+                      <span>Risk: {Math.round(selectedRoute.risk_score)}/100</span>
+                      <span className="text-[9px] opacity-80 uppercase tracking-wider">
+                        {selectedRoute.risk_label}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Highlights / Positives */}
+                  {selectedRoute.positives && selectedRoute.positives.length > 0 && (
+                    <div className="p-2 rounded-2xl bg-emerald-950/20 border border-emerald-500/20 text-[11px] text-emerald-300 flex items-center gap-1.5 font-medium">
+                      <span className="text-emerald-400 font-bold">✓</span>
+                      <span className="truncate">{selectedRoute.positives[0]}</span>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
         )}
       </main>
