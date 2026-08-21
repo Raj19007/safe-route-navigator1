@@ -58,12 +58,46 @@ export const AdminDashboard: React.FC = () => {
     }
   };
 
+  const handleQuickAdminAuth = async () => {
+    setIsLoading(true);
+    try {
+      const authRes = await api.login('admin@saferoute.local', 'admin123');
+      localStorage.setItem('saferoute_auth_token', authRes.token);
+      setActionMsg('✓ Authenticated as Municipal Admin!');
+      loadData();
+    } catch (e) {
+      console.error(e);
+      setIsLoading(false);
+    }
+  };
+
   if (isLoading && !data) {
     return (
-      <div className="h-full w-full flex items-center justify-center p-12 text-slate-300">
-        <div className="flex items-center space-x-3">
-          <div className="w-5 h-5 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin" />
-          <span>Loading Municipal Safety Telemetry...</span>
+      <div className="h-full w-full flex flex-col items-center justify-center p-12 text-slate-300 space-y-4">
+        <div className="w-8 h-8 border-3 border-purple-500 border-t-transparent rounded-full animate-spin" />
+        <span className="text-sm font-semibold">Loading Municipal Safety Telemetry...</span>
+      </div>
+    );
+  }
+
+  if (!data) {
+    return (
+      <div className="h-full w-full flex flex-col items-center justify-center p-8 text-center">
+        <div className="glass-panel p-8 rounded-3xl border border-purple-500/40 max-w-md space-y-4 shadow-glow-indigo">
+          <div className="w-14 h-14 rounded-2xl bg-purple-500/20 border border-purple-500/40 flex items-center justify-center mx-auto text-purple-400">
+            <ShieldCheck className="w-7 h-7" />
+          </div>
+          <h2 className="text-lg font-black text-slate-100">Municipal Admin Access</h2>
+          <p className="text-xs text-slate-400">
+            Authenticate to review live hazard queues, adjust spatial risk parameters, and monitor city-wide safety telemetry.
+          </p>
+          <button
+            onClick={handleQuickAdminAuth}
+            className="w-full py-3 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white font-black text-xs uppercase tracking-wider shadow-glow-indigo transition-all flex items-center justify-center gap-2"
+          >
+            <ShieldCheck className="w-4 h-4 text-purple-200" />
+            <span>1-Click Admin Sign In</span>
+          </button>
         </div>
       </div>
     );

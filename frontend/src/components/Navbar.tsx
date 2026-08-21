@@ -120,28 +120,45 @@ export const Navbar: React.FC<NavbarProps> = ({
           <span>SOS HELP</span>
         </button>
 
-        {/* User Auth */}
+        {/* User & Admin Auth */}
         {currentUser ? (
           <div className="flex items-center space-x-2 pl-2 border-l border-slate-800">
-            <span className="text-xs text-slate-300 hidden md:inline font-bold">
-              {currentUser.full_name}
-            </span>
+            <div className="flex items-center space-x-1.5">
+              {currentUser.role === 'admin' && (
+                <span className="text-[9px] uppercase font-black px-1.5 py-0.5 rounded-md bg-purple-500/20 text-purple-300 border border-purple-500/40">
+                  ADMIN
+                </span>
+              )}
+              <span className="text-xs text-slate-300 hidden md:inline font-bold">
+                {currentUser.full_name}
+              </span>
+            </div>
             <button
               onClick={onLogout}
-              className="text-xs text-slate-400 hover:text-rose-400 px-2.5 py-1 rounded-xl bg-slate-900 border border-slate-800"
+              className="text-xs text-slate-400 hover:text-rose-400 px-2.5 py-1 rounded-xl bg-slate-900 border border-slate-800 transition-colors"
               title="Logout"
             >
               Sign Out
             </button>
           </div>
         ) : (
-          <button
-            onClick={onOpenAuth}
-            className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 text-xs font-bold border border-slate-800"
-          >
-            <User className="w-3.5 h-3.5 text-slate-400" />
-            <span className="hidden sm:inline">Sign In</span>
-          </button>
+          <div className="flex items-center space-x-1.5">
+            <button
+              onClick={onOpenAuth}
+              className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-purple-600/90 hover:bg-purple-600 text-white text-xs font-black border border-purple-400/40 shadow-glow-indigo transition-all"
+              title="Open Admin Login"
+            >
+              <LayoutDashboard className="w-3.5 h-3.5" />
+              <span>Admin Login</span>
+            </button>
+            <button
+              onClick={onOpenAuth}
+              className="hidden sm:flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 text-xs font-bold border border-slate-800 transition-all"
+            >
+              <User className="w-3.5 h-3.5 text-slate-400" />
+              <span>Sign In</span>
+            </button>
+          </div>
         )}
       </div>
     </header>

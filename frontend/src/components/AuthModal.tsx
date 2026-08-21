@@ -89,6 +89,33 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           </button>
         </div>
 
+        {/* 1-Click Quick Login Banner */}
+        <div className="p-4 bg-gradient-to-r from-purple-950/60 via-slate-900 to-indigo-950/60 border-b border-purple-500/30 space-y-2">
+          <span className="text-[10px] uppercase font-black tracking-widest text-purple-300 block">
+            ⚡ Quick 1-Tap Access
+          </span>
+          <div className="grid grid-cols-2 gap-2">
+            <button
+              type="button"
+              disabled={isLoading}
+              onClick={() => quickLogin('admin@saferoute.local', 'admin123')}
+              className="p-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-black transition-all shadow-glow-indigo flex items-center justify-center gap-1.5"
+            >
+              <ShieldCheck className="w-4 h-4 text-purple-200" />
+              <span>Admin Login</span>
+            </button>
+            <button
+              type="button"
+              disabled={isLoading}
+              onClick={() => quickLogin('commuter@saferoute.local', 'user123')}
+              className="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-emerald-500/40 text-emerald-300 text-xs font-bold transition-all flex items-center justify-center gap-1.5"
+            >
+              <User className="w-4 h-4 text-emerald-400" />
+              <span>User Login</span>
+            </button>
+          </div>
+        </div>
+
         {/* Form Body */}
         <form onSubmit={handleAuth} className="p-5 space-y-4">
           {errorMsg && (
@@ -116,9 +143,21 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           )}
 
           <div>
-            <label className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 block mb-1">
-              Email Address
-            </label>
+            <div className="flex items-center justify-between mb-1">
+              <label className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
+                Email Address
+              </label>
+              <button
+                type="button"
+                onClick={() => {
+                  setEmail('admin@saferoute.local');
+                  setPassword('admin123');
+                }}
+                className="text-[10px] text-purple-400 hover:text-purple-300 font-bold hover:underline"
+              >
+                Fill Admin Email
+              </button>
+            </div>
             <div className="relative flex items-center">
               <Mail className="w-4 h-4 text-slate-500 absolute left-3" />
               <input
@@ -126,7 +165,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="user@saferoute.local"
+                placeholder="admin@saferoute.local"
                 className="w-full bg-slate-900 border border-slate-700 rounded-xl pl-9 pr-3 py-2 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-emerald-500"
               />
             </div>
@@ -157,31 +196,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           >
             {isLoading ? 'Authenticating...' : isRegister ? 'Register Account' : 'Sign In'}
           </button>
-
-          {/* Quick Demo Logins for judges */}
-          <div className="pt-2 border-t border-slate-800 space-y-2">
-            <span className="text-[10px] uppercase font-bold text-slate-500 block text-center">
-              1-Click Demo Logins
-            </span>
-            <div className="grid grid-cols-2 gap-2">
-              <button
-                type="button"
-                onClick={() => quickLogin('commuter@saferoute.local', 'user123')}
-                className="p-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 text-[11px] font-semibold transition-all flex items-center justify-center gap-1"
-              >
-                <User className="w-3 h-3 text-emerald-400" />
-                <span>Demo Commuter</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => quickLogin('admin@saferoute.local', 'admin123')}
-                className="p-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-purple-500/40 text-purple-300 text-[11px] font-semibold transition-all flex items-center justify-center gap-1"
-              >
-                <ShieldCheck className="w-3 h-3 text-purple-400" />
-                <span>Demo Admin</span>
-              </button>
-            </div>
-          </div>
 
           {/* Toggle Register / Login */}
           <div className="text-center pt-1">
