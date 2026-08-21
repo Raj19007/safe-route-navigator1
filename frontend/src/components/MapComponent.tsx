@@ -306,82 +306,95 @@ export const MapComponent: React.FC<MapComponentProps> = ({
           </Popup>
         </Marker>
 
-        {/* Safe Places Layer */}
+        {/* Safe Places Layer - Filtered to nearby active area */}
         {filterSafePlaces &&
-          safePlaces.map(place => {
-            const icon =
-              place.category === 'police' ? policeIcon :
-              place.category === 'hospital' ? hospitalIcon : pharmacyIcon;
+          safePlaces
+            .filter(p => {
+              const d1 = Math.hypot(p.latitude - originCoords[0], p.longitude - originCoords[1]);
+              const d2 = Math.hypot(p.latitude - destCoords[0], p.longitude - destCoords[1]);
+              return d1 < 0.15 || d2 < 0.15; // Within ~15km
+            })
+            .map(place => {
+              const icon =
+                place.category === 'police' ? policeIcon :
+                place.category === 'hospital' ? hospitalIcon : pharmacyIcon;
 
-            return (
+              return (
+                <Marker
+                  key={place.id}
+                  position={[place.latitude, place.longitude]}
+                  icon={icon}
+                >
+                  <Popup>
+                    <div className="p-2 text-xs space-y-1 max-w-xs">
+                      <div className="flex items-center space-x-1 text-indigo-400 font-bold uppercase text-[10px]">
+                        <Shield className="w-3 h-3" />
+                        <span>{place.category.replace('_', ' ')}</span>
+                      </div>
+                      <strong className="block text-slate-100 text-sm font-bold">{place.name}</strong>
+                      {place.address && <p className="text-slate-400 text-[11px]">{place.address}</p>}
+                      {place.phone && (
+                        <div className="flex items-center space-x-1 text-emerald-400 text-[11px] font-semibold">
+                          <Phone className="w-3 h-3" />
+                          <span>{place.phone}</span>
+                        </div>
+                      )}
+                      {place.is_24_7 && (
+                        <span className="inline-block px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[9px] font-bold">
+                          24/7 OPEN EMERGENCY HAVEN
+                        </span>
+                      )}
+                    </div>
+                  </Popup>
+                </Marker>
+              );
+            })}
+
+        {/* Crowd Reports Layer - Filtered to nearby active area */}
+        {filterHazards &&
+          reports
+            .filter(r => {
+              const d1 = Math.hypot(r.latitude - originCoords[0], r.longitude - originCoords[1]);
+              const d2 = Math.hypot(r.latitude - destCoords[0], r.longitude - destCoords[1]);
+              return d1 < 0.15 || d2 < 0.15;
+            })
+            .slice(0, 15)
+            .map(rep => (
               <Marker
-                key={place.id}
-                position={[place.latitude, place.longitude]}
-                icon={icon}
+                key={rep.id}
+                position={[rep.latitude, rep.longitude]}
+                icon={reportHazardIcon}
               >
                 <Popup>
                   <div className="p-2 text-xs space-y-1 max-w-xs">
-                    <div className="flex items-center space-x-1 text-indigo-400 font-bold uppercase text-[10px]">
-                      <Shield className="w-3 h-3" />
-                      <span>{place.category.replace('_', ' ')}</span>
+                    <div className="flex items-center space-x-1 text-amber-400 font-bold uppercase text-[10px]">
+                      <AlertCircle className="w-3 h-3" />
+                      <span>Hazard Alert: {rep.category}</span>
                     </div>
-                    <strong className="block text-slate-100 text-sm">{place.name}</strong>
-                    {place.address && <p className="text-slate-400 text-[11px]">{place.address}</p>}
-                    {place.phone && (
-                      <div className="flex items-center space-x-1 text-emerald-400 text-[11px] font-semibold">
-                        <Phone className="w-3 h-3" />
-                        <span>{place.phone}</span>
-                      </div>
-                    )}
-                    {place.is_24_7 && (
-                      <span className="inline-block px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[9px] font-bold">
-                        24/7 OPEN EMERGENCY HAVEN
-                      </span>
-                    )}
+                    <p className="text-slate-200 text-xs">{rep.description}</p>
+                    <div className="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-slate-800">
+                      <span className="font-semibold text-rose-400">Severity: {rep.severity}</span>
+                      <span>Upvotes: {rep.upvotes}</span>
+                    </div>
                   </div>
                 </Popup>
               </Marker>
-            );
-          })}
-
-        {/* Crowd Reports Layer */}
-        {filterHazards &&
-          reports.slice(0, 30).map(rep => (
-            <Marker
-              key={rep.id}
-              position={[rep.latitude, rep.longitude]}
-              icon={reportHazardIcon}
-            >
-              <Popup>
-                <div className="p-2 text-xs space-y-1 max-w-xs">
-                  <div className="flex items-center space-x-1 text-amber-400 font-bold uppercase text-[10px]">
-                    <AlertCircle className="w-3 h-3" />
-                    <span>Crowd Hazard: {rep.category}</span>
-                  </div>
-                  <p className="text-slate-200 text-xs">{rep.description}</p>
-                  <div className="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-slate-800">
-                    <span className="font-semibold text-rose-400">Severity: {rep.severity}</span>
-                    <span>Upvotes: {rep.upvotes}</span>
-                  </div>
-                </div>
-              </Popup>
-            </Marker>
-          ))}
+            ))}
       </MapContainer>
 
-      {/* Floating Layer Controls */}
+      {/* Floating Layer Controls (Top Right) */}
       <div className="absolute top-4 right-4 z-20 flex flex-col gap-2">
         <button
           onClick={() => setLayersOpen(!layersOpen)}
-          className="p-2.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-slate-200 border border-slate-700 shadow-xl transition-all flex items-center gap-1.5 text-xs font-semibold"
-          title="Toggle Map Layers"
+          className="p-2.5 rounded-2xl bg-slate-950/90 hover:bg-slate-900 text-slate-200 border border-slate-700/80 shadow-2xl transition-all flex items-center gap-1.5 text-xs font-bold"
+          title="Toggle Layers"
         >
-          <Layers className="w-4 h-4 text-emerald-400" />
-          <span className="hidden sm:inline">Layers</span>
+          <Layers className="w-4 h-4 text-cyan-400" />
+          <span className="hidden sm:inline">Map Layers</span>
         </button>
 
         {layersOpen && (
-          <div className="glass-panel p-3 rounded-xl border border-slate-700/80 shadow-2xl space-y-2 text-xs min-w-[170px] animate-in fade-in zoom-in-95">
+          <div className="glass-panel p-3.5 rounded-2xl border border-slate-700/80 shadow-2xl space-y-2.5 text-xs min-w-[190px] animate-in fade-in zoom-in-95">
             <label className="flex items-center space-x-2 text-slate-200 cursor-pointer">
               <input
                 type="checkbox"
@@ -389,7 +402,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
                 onChange={(e) => setFilterSafePlaces(e.target.checked)}
                 className="rounded accent-emerald-500"
               />
-              <span>Safe Places (Police/Hospital)</span>
+              <span>Nearby Safe Havens</span>
             </label>
             <label className="flex items-center space-x-2 text-slate-200 cursor-pointer">
               <input
@@ -398,29 +411,32 @@ export const MapComponent: React.FC<MapComponentProps> = ({
                 onChange={(e) => setFilterHazards(e.target.checked)}
                 className="rounded accent-amber-500"
               />
-              <span>Community Hazard Alerts</span>
+              <span>Hazard Incident Pins</span>
+            </label>
+            <label className="flex items-center space-x-2 text-slate-200 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={showRiskHeatmap}
+                onChange={(e) => setShowRiskHeatmap(e.target.checked)}
+                className="rounded accent-rose-500"
+              />
+              <span>Risk Density Heatmap</span>
             </label>
           </div>
         )}
       </div>
 
-      {/* Centralized Legend Box */}
-      <div className="absolute bottom-4 left-4 z-20 glass-panel px-3 py-2 rounded-xl border border-slate-800/80 shadow-xl hidden md:flex items-center space-x-3 text-[11px] font-semibold text-slate-300">
-        <span className="text-slate-400 font-bold uppercase text-[10px]">Risk Legend:</span>
-        <span className="flex items-center gap-1">
-          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" /> 0-20 Safe
+      {/* Modern Floating Bottom Legend */}
+      <div className="absolute bottom-4 left-4 z-20 glass-panel px-3.5 py-2 rounded-2xl border border-slate-800/80 shadow-xl hidden md:flex items-center space-x-3 text-[11px] font-bold text-slate-300">
+        <span className="text-slate-400 uppercase text-[9px] font-black tracking-wider">Safety Risk:</span>
+        <span className="flex items-center gap-1.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-glow-emerald" /> 0-40 Safe
         </span>
-        <span className="flex items-center gap-1">
-          <span className="w-2.5 h-2.5 rounded-full bg-lime-500" /> 21-40 Low
+        <span className="flex items-center gap-1.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-amber-500 shadow-glow-amber" /> 41-70 Moderate
         </span>
-        <span className="flex items-center gap-1">
-          <span className="w-2.5 h-2.5 rounded-full bg-amber-500" /> 41-60 Moderate
-        </span>
-        <span className="flex items-center gap-1">
-          <span className="w-2.5 h-2.5 rounded-full bg-orange-500" /> 61-80 Elevated
-        </span>
-        <span className="flex items-center gap-1">
-          <span className="w-2.5 h-2.5 rounded-full bg-rose-500" /> 81-100 High
+        <span className="flex items-center gap-1.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-rose-500 shadow-glow-red" /> 71-100 High Risk
         </span>
       </div>
     </div>

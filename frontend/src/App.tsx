@@ -282,6 +282,33 @@ export const App: React.FC = () => {
     handleCalculateRoutes(14.0, 'WOMAN', 'WALKING');
   };
 
+  // Selection handlers from Search Autocomplete
+  const handleSelectOriginLocation = (coords: [number, number], name: string) => {
+    setOriginCoords(coords);
+    setOriginText(name);
+  };
+
+  const handleSelectDestLocation = (coords: [number, number], name: string) => {
+    setDestCoords(coords);
+    setDestText(name);
+  };
+
+  // Map Click handler with reverse geocoding
+  const handleMapClick = async (lat: number, lng: number) => {
+    setDestCoords([lat, lng]);
+    setDestText(`Pinned Location (${lat.toFixed(4)}, ${lng.toFixed(4)})`);
+    try {
+      const res = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&zoom=16`);
+      const data = await res.json();
+      if (data && data.display_name) {
+        const short = data.display_name.split(',').slice(0, 3).join(',').trim();
+        setDestText(short);
+      }
+    } catch (e) {
+      console.warn("Reverse geocode failed:", e);
+    }
+  };
+
   return (
     <div className="h-screen w-screen flex flex-col bg-slate-950 text-slate-100 overflow-hidden font-sans">
       {/* Top Navbar */}
@@ -299,17 +326,6 @@ export const App: React.FC = () => {
         demoMode={demoMode}
         setDemoMode={setDemoMode}
       />
-
-      {/* Judge Demo Console Bar */}
-      {demoMode && (
-        <DemoScenarioBar
-          onRunScenario1={runScenario1}
-          onRunScenario2={runScenario2}
-          onRunScenario3={runScenario3}
-          onReset={resetScenario}
-          activeScenario={activeScenario}
-        />
-      )}
 
       {/* Live Demo Notification Toast */}
       {demoBannerMsg && (
@@ -338,7 +354,7 @@ export const App: React.FC = () => {
           <div className="w-full h-full flex flex-col lg:flex-row overflow-hidden relative">
             {/* Left Sidebar: Controls & Route Comparison Cards */}
             <div className="w-full lg:w-[440px] xl:w-[480px] h-full overflow-y-auto p-3 sm:p-4 md:p-5 space-y-4 border-r border-slate-800/80 shrink-0 z-20 glass-panel lg:bg-slate-950/80">
-              {/* Route Input Panel */}
+              {/* Route Input Panel with Autocomplete Search */}
               <NavigationControlPanel
                 originText={originText}
                 setOriginText={setOriginText}
@@ -346,6 +362,8 @@ export const App: React.FC = () => {
                 setDestText={setDestText}
                 originCoords={originCoords}
                 destCoords={destCoords}
+                onSelectOriginLocation={handleSelectOriginLocation}
+                onSelectDestLocation={handleSelectDestLocation}
                 userProfile={userProfile}
                 setUserProfile={setUserProfile}
                 travelMode={travelMode}
@@ -369,7 +387,7 @@ export const App: React.FC = () => {
                 <div className="flex items-center justify-between px-1">
                   <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-300 flex items-center gap-1.5">
                     <Navigation className="w-3.5 h-3.5 text-emerald-400" />
-                    Calculated Alternatives ({routes.length})
+                    Calculated Safe Alternatives ({routes.length})
                   </h3>
                   <span className="text-[11px] text-slate-400">
                     Mode: {travelMode}
@@ -422,10 +440,7 @@ export const App: React.FC = () => {
                 reports={reports}
                 userLocation={userLocation}
                 userAccuracy={userAccuracy}
-                onMapClick={(lat, lng) => {
-                  setDestCoords([lat, lng]);
-                  setDestText(`Pinned Destination (${lat.toFixed(4)}, ${lng.toFixed(4)})`);
-                }}
+                onMapClick={handleMapClick}
               />
             </div>
           </div>
