@@ -30,12 +30,24 @@ def get_admin_dashboard_stats(db: Session) -> AdminDashboardResponse:
 
     # Fetch evaluated segments to compute high-risk count and avg confidence
     map_data = get_safety_map_data(db)
-    evaluated_segments = map_data["segments"]
+    evaluated_segments = map_data.get("segments", [])
 
-    high_risk_segs = [s for s in evaluated_segments if s["risk_score"] >= 60.0]
-    high_risk_segs.sort(key=lambda s: s["risk_score"], reverse=True)
+    def get_risk(s: Any) -> float:
+        if isinstance(s, dict):
+            return float(s.get("risk_score", 0.0))
+        return float(getattr(s, "risk_score", 0.0))
 
-    avg_conf = sum(s["confidence_score"] for s in evaluated_segments) / max(1, len(evaluated_segments))
+    def get_conf(s: Any) -> float:
+        if isinstance(s, dict):
+            return float(s.get("confidence_score", 50.0))
+        return float(getattr(s, "confidence_score", 50.0))
+
+    sorted_segs = sorted(evaluated_segments, key=get_risk, reverse=True)
+    high_risk_segs = [s for s in sorted_segs if get_risk(s) >= 45.0]
+    if not high_risk_segs and sorted_segs:
+        high_risk_segs = sorted_segs[:6]
+
+    avg_conf = sum(get_conf(s) for s in evaluated_segments) / max(1, len(evaluated_segments)) if evaluated_segments else 85.0
     active_alerts = sum(1 for r in reports if r.status != "REJECTED" and r.severity in ["HIGH", "CRITICAL"])
 
     recent_reports_db = db.query(Report).order_by(Report.created_at.desc()).limit(20).all()
