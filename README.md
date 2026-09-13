@@ -288,8 +288,3 @@ The application architecture separates the **Risk Engine** (`backend/app/risk_en
 - **XGBoost / LightGBM** for fast gradient-boosted spatial risk prediction.
 - **Spatial Graph Neural Networks (GNNs)** for topological edge embedding across metropolitan road networks.
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](file:///LICENSE) file for details.
